@@ -1,0 +1,23 @@
+replicaCount: 1
+
+image:
+  repository: patriciasousa/site-marilia
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  className: nginx
+  hosts:
+  - host: www.mariliakarateca.com
+    paths:
+    - path: /
+      pathType: Prefix
+  tls:
+  - secretName: marilia-tls
+    hosts:
+    - www.mariliakarateca.com

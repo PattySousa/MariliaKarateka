@@ -1,0 +1,644 @@
+/*CSS Estrutural (galeria.html)*/
+
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+header {
+	background: linear-gradient(to right, #0000FF, #00FFFF, #800080, #FF69B4, #FF0000, #FFFF00, #FFA500);
+	padding: 0px 0;
+	margin-left: 0;
+	display: flex;
+	align-items: center;
+}
+
+.social_container {
+	display:flex;
+	align-items: right;
+	justify-content: right;
+	text-align: right;
+	width: auto;
+	border: 5px solid #000000;
+	background-color: #000000;
+	padding-right: 50px;
+}
+
+.social_container li {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 25px;
+	display: flex;
+	margin: 5px 0px;
+	padding: 10px 5px;
+	animation: mudarTamanho 8s infinite;
+}
+
+.arrow-right::after {
+	content: "\2192";
+	color: #FFFFFF;
+	font-weight: bolder;
+	display: flex;
+	margin: 5px 0;
+	padding: 10px 5px;	
+}
+
+.social_icons {
+    display: flex;
+    align-items: right;
+	justify-content: right;
+	text-align: right;
+	margin-left: 20px;
+	background-color: #000000;
+}
+
+.icon_link {
+    margin-left: 10px;
+	width: 40px;
+	height: 40px;
+	padding: 5px 5px 25px 10px;
+}
+
+.icon_link img {
+    height: 32px;
+	width: 32px; 
+	border-radius: 20px;
+	background-color: #000000;
+	display: flex;
+	justify-content: center;
+}
+
+.icon_link img:hover {
+	font-style: italic;
+	color: #FF0000;
+} 
+
+
+nav {
+    padding: 0 20px;
+    margin-right: 40px;
+	margin-left: 40px;
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav_img {
+    width: 100px;
+    height: 90px;
+    margin-right: 50px; 
+	border-radius: 30px;
+}
+
+nav ul {
+    display: flex; 
+    align-items: center; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-right: 30px; 
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 10px 5px 10px;
+    text-decoration: none;   
+	position: relative;
+}
+
+@keyframes mudarTamanho {
+    0% {
+        font-size: 18px; 
+    }
+    50% {
+        font-size: 22px; 
+    }
+    100% {
+        font-size: 18px; 
+    }
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 100%; 
+    height: 2px; 
+    background-color: #FFFFFF; 
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+
+nav a:hover::after {
+    transform: scaleX(1); 
+}
+
+
+nav a:hover {
+	font-style: italic;
+	color: yellow;
+} 
+
+
+
+
+/* CSS Main Galeria.html*/
+
+
+.wrapper {
+    position: relative;
+	margin: auto;
+	width: 1100px;
+    height: 1000px;
+	overflow: hidden;
+}
+
+.wrapper_titulo {
+	font-size: 35px;
+	font-weight: bold;
+	color: #FF0000;
+	text-shadow: 3px 3px 2px white;
+	text-align: center;
+	padding: 60px 20px 20px 20px;
+}
+
+
+.carousel {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+	width: auto;
+	height: auto;
+}
+  
+.carousel li {
+    min-width: auto;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+  
+.carousel img {
+	height: 750px;
+    width: 950px;
+	object-fit: cover;
+}
+  
+.nav-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+  
+.nav-arrows a {
+    background-color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+  
+
+.galeria {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.galeria_titulo {
+	font-size: 35px;
+	font-weight: bold;
+	color: #FF0000;
+	text-shadow: 3px 3px 2px white;
+	text-align: center;
+	padding: 40px 40px 60px 40px;
+}
+
+
+.galeria li {
+    display: inline-block;
+    width: 30%; 
+    margin: 10px; 
+	padding: 5px 5px 15px 5px;
+	border-radius: 10px;
+}
+
+.galeria li:hover {
+	transform: scale(1.5);   
+	z-index: 1;     
+}
+
+.galeria_descricao {
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	text-shadow: 3px 3px 1px #FEFEFE, 	5px 5px 2px #888888;
+}
+
+.galeria_video {
+	list-style-type: none;
+    padding: 3em 0;
+    text-align: center;
+    position: relative;
+}
+
+/* CSS Rodape do (galeria.html)*/
+
+.rodape {
+    color: #FFFFFF;
+    background: #888888;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0px 0 0;
+    padding: 10px auto;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.rodape img.logo {
+    width: 75px; 
+    height: 80px; 
+    padding-right: 0.5px;
+    border-radius: 5px; 
+}
+
+.rodape ol {
+    list-style: none; 
+    padding: 15px 0 2px 0;
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+    height: 100px;
+    width: 200px;
+}   
+
+.rodape li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.5;
+    width: 200px;
+    height: 10px;
+    margin: 5px 0;
+}
+
+.rodape li:first-child {
+    height: 20px; 
+}
+
+.rodape li:last-child {
+    height: 30px; 
+}
+
+
+
+
+/*Responsividade - galeria.html*/
+
+/* Ajustes gerais para header, social container, galeria de vídeos, footer e carrossel */
+@media (max-width: 1243px) {
+    
+    header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .nav_img {
+        width: 80px;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    .social_container {
+        width: 100%; 
+        max-width: 1243px; 
+        margin: 0 auto; 
+        padding: 10px;
+        text-align: center;
+        border: 5px solid #000000;
+    }
+
+    .social_icons {
+        justify-content: center;
+        margin-top: 10px;
+        flex-wrap: wrap; 
+    }
+
+    .icon_link {
+        margin: 5px; 
+        width: 30px; 
+        height: 30px; 
+    }
+
+    .galeria_video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria_video li {
+        width: auto;
+        margin: 10px 0;
+    }
+
+    .galeria iframe {
+        width: auto;
+        height: auto;
+        
+    }
+
+    /* Footer */
+    .rodape {
+       color: #FFFFFF;
+        background: #888888;
+        font-size: 10px;
+        font-weight: bold;
+        margin: 0px 0 0;
+        text-align: center;
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .rodape ol {
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .rodape img.logo {
+        width: 60px;
+        height: 50px;
+    }
+}
+
+/* Ajustes para telas entre 595px e 800px */
+@media (max-width: 800px) and (min-width: 595px) {
+    
+    .social_container {
+        width: 100%; 
+        max-width: 879px; 
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .social_icons {
+        justify-content: center;
+        margin-top: 10px; 
+    }
+
+    .icon_link {
+        margin: 5px;
+        width: 30px; 
+        height: 30px; 
+    }
+}
+
+/* Ajustes para telas entre 880px e 1240px */
+@media (max-width: 1240px) and (min-width: 880px) {
+    
+    .social_container {
+        width: 100%; 
+        max-width: 1240px; 
+        margin: 0 auto; 
+        padding: 10px;
+        text-align: center;
+    }
+
+    .social_icons {
+        justify-content: center;
+        margin-top: 10px;
+        flex-wrap: wrap; 
+    }
+
+    .icon_link {
+        margin: 5px;
+        width: 30px; 
+        height: 30px; 
+    }
+}
+
+
+/* Ajustes para telas abaixo de 600px */
+@media  (max-width: 600px) {
+    
+    .carousel li {
+        height: 100%; 
+    }
+
+    .nav-arrows {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+    .nav-arrows a {
+        font-size: 5px;
+        padding: 5px;
+    }
+
+
+    /* Ajuste de título e carrossel */
+    .wrapper_titulo {
+        margin-bottom: 5px; 
+    }
+
+    /* Social Container - garantir que a largura seja adequada */
+    .social_container {
+        width: 100%; 
+        max-width: 599px; 
+        margin: 0 auto;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .icon_link {
+        width: 25px; 
+        height: 25px; 
+    }
+}
+
+
+
+/* Ajustes para dispositivos acima 1025px até 1500px (largura entre 1250px e 1400px) */
+@media (min-width: 1250px) and (max-width: 1500px) {
+    .carousel img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .galeria iframe {
+        width: 90%;
+        height: 90%;
+    }
+
+    .carousel li {
+        min-width: 90%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .galeria_video li {
+        width: auto;
+        margin: 10px 0;
+    }
+
+
+}
+
+
+
+/* Ajustes para tablets e dispositivos médios (largura entre 768px e 1024px) */
+@media (min-width: 781px) and (max-width: 1024px) {
+    .carousel img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .galeria iframe {
+        width: 90%;
+        height: 90%;
+    }
+
+    .galeria_video li {
+        width: auto;
+        margin: 10px 0;
+    }
+
+    .carousel li {
+        min-width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Ajustes para celulares pequenos (abaixo de 480px) */
+@media (min-width: 300px) and (max-width: 480px) {
+    .carousel img {
+        width: 90%;
+        height: auto;
+    }
+
+    .galeria iframe {
+        width: 90%;
+        height: auto;
+    }
+
+    .carousel li {
+        min-width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel ul {
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .nav-arrows {
+        top: 50%;
+        transform: translateY(-50%);
+        justify-content: space-between;
+        position: absolute;
+        height: auto;
+        display: flex;
+    }
+}
+
+
+/* Carrossel */
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    height: auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel li {
+    min-width: 100%;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.nav-arrows {
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: space-between;
+    position: flex;
+    height: auto;
+}
+
+.nav-arrows a {
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    margin-top: auto;
+}
+
+/* CSS do galeria.html - desenvolvido por Patrícia Sousa*/
