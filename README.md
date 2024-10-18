@@ -1,7 +1,7 @@
 # site-marilia-karateka
 Site Marilia Karateka 
 
-=> Desenvolvi este projeto para subir o site que criei em
+=> Desenvolvi este projeto para subir o site que fiz em
 homenagem à minha mãe, Marília e colocar em prática as 
 últimas ferramentas que aprendi recentemente em meus estudos de Devops. 
 
@@ -48,7 +48,13 @@ neste projeto.
     Os arquivos (index.html, galeria.html, style - index.css, style - galeria.css e script.css) e transferi as imagens da pasta local 
     do meu computador para pasta de imagens deste projeto com Docker.
 
-    
+7 - Já com o repositório do GitHub aberto no meu terminal do Powershell do VSCode, eu enviei as alterações e inclusões dos arquivos para o Git.
+
+   =>git status (Verifiquei se todos os arquivos estavam listados)
+   =>git add . (Adicionei todos os arquivos modificados)
+   =>git commit -m "alterações dos arquivos" (Fiz um commit das alterações dos arquivos)
+   =>git push origin main (Finalmente enviei as alterações para meu repositótio remoto do GitHub -> Site-Marilia-Karateka)
+
     
 
 
