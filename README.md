@@ -4,6 +4,9 @@ Site Marilia Karateka
 => Desenvolvi este projeto para subir o site que fiz em
 homenagem à minha mãe, Marília e colocar em prática as 
 últimas ferramentas que aprendi recentemente em meus estudos de Devops. 
+   Estou trabalhando recentemente neste projeto para finalizar os detalhes para o Deploy do mesmo.
+
+   Progresso até o momento:
 
 => Como já sabia quais pastas e arquivos precisaria criar, 
 antes de iniciar esta segunda parte do projeto, resolvi criar a  arquiterura dele primeiro no VSCode, para depois importar os arquivos do site, da minha máquina local e instalar os devidos conteúdos externos necessários neste 
@@ -55,6 +58,6 @@ neste projeto.
    =>git commit -m "alterações dos arquivos" (Fiz um commit das alterações dos arquivos)
    =>git push origin main (Finalmente enviei as alterações para meu repositótio remoto do GitHub -> Site-Marilia-Karateka)
 
-    
+    ** Em breve irei realizar alterações ao projeto  
 
 
