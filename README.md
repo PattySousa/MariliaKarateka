@@ -1,8 +1,7 @@
-# site-marilia-karateka
+# MariliaKarateka
 Site Marilia Karateka 
 
-=> Desenvolvi este projeto para subir o site que fiz em
-homenagem à minha mãe, Marília.
+=> Desenvolvi este site em homenagem à minha mãe, Marília.
    
 =>A estrutura do projeto ficou com esta arquitetura, no VSCode 
 
