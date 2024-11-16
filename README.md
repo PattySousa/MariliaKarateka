@@ -21,7 +21,7 @@ Site Marilia Karateka
    => git status (Verifiquei se todos os arquivos estavam listados)
    => git add . (Adicionei todos os arquivos modificados)
    => git commit -m "alterações dos arquivos" (Fiz um commit das alterações dos arquivos)
-   => git push origin main (Finalmente enviei as alterações para meu repositótio remoto do GitHub -> Site-Marilia-Karateka)
+   => git push origin main (Finalmente enviei as alterações para meu repositótio remoto do GitHub -> MariliaKarateka)
 
 
 => Foi uma experiência incrível de muito aprendizado e práticas em FrontEnd.
