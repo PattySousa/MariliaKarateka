@@ -314,7 +314,7 @@ nav a:hover {
 
 
 .beneficios_itens:before {
-    content: "🟊";
+    content: "*";
     margin-right: 10px;
 }
 
