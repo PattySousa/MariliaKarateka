@@ -403,6 +403,13 @@ nav a:hover {
     height: 30px;
 }
 
+.rodape_icons img.icons {
+    width: 75px;
+    height: 80px;
+    padding-right: 0.5px;
+    border-radius: 5px;
+}
+
 /* Responsividade - index.html*/
 @media (max-width: 1243px) {
     header {
@@ -475,11 +482,7 @@ nav a:hover {
          width: 60px;
          height: 50px;
      }
-
-     .rodape_icons icons{
-        width: 50px;
-        height: 50px;
-     }
+     
 }
 
 /* Ajustes para telas entre 595px e 800px */
