@@ -382,6 +382,19 @@ nav a:hover {
     margin: 5px 0;
 }
 
+.rodape a { 
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 10px 5px 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+
 .rodape li:first-child {
     height: 20px;
 }
