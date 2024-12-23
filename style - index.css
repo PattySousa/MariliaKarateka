@@ -403,12 +403,13 @@ nav a:hover {
     height: 30px;
 }
 
-.rodape_icons img.icons {
-    width: 75px;
-    height: 80px;
+.midia .img.icons {
+    width: 20px;
+    height: 20px;
     padding-right: 0.5px;
     border-radius: 5px;
-}
+    background: #000000;
+}     
 
 /* Responsividade - index.html*/
 @media (max-width: 1243px) {
@@ -482,6 +483,14 @@ nav a:hover {
          width: 60px;
          height: 50px;
      }
+
+     .img.icons {
+        width: 75px;
+        height: 80px;
+        padding-right: 0.5px;
+        border-radius: 5px;
+        background-color: #000000;
+    }     
      
 }
 
