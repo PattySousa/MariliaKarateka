@@ -268,55 +268,49 @@ nav a:hover {
 
 .rodape {
     color: #FFFFFF;
-    background: #888888;
-    font-size: 10px;
-    font-weight: bold;
-    margin: 0px 0 0;
-    padding: 10px auto;
-    text-align: center;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-}
-
-.rodape img.logo {
-    width: 75px; 
-    height: 80px; 
-    padding-right: 0.5px;
-    border-radius: 5px; 
+     background: #888888;
+     font-size: 12px;
+     font-weight: bold;
+     margin: 0px 0 0;
+     text-align: center;
+     display: flex; 
+     align-items: center; 
+     justify-content: center;
 }
 
 .rodape ol {
-    list-style: none; 
-    padding: 15px 0 2px 0;
-    margin: 0; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-start;
-    height: 100px;
-    width: 200px;
-}   
+     align-items: center;
+     margin-top: 10px;
+     width: 80px;
+     height: 80px;
+}
+
+.rodape img.logo {
+     width: 60px;
+     height: 50px;
+}
 
 .rodape li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 0.5;
+    display: inline-flex;
+    justify-content: right;
+    align-items: right;
+    line-height: 1.2;
     width: 200px;
     height: 10px;
-    margin: 5px 0;
+    margin: 5px 0 5px 150px;
+    color: #E0E0E0;
 }
 
 .rodape a { 
     text-transform: uppercase;
-    color: #FFFFFF;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     display: inline-block;
     padding: 10px 10px 5px 10px;
     text-decoration: none;
     position: relative;
+    color: #FFAAAA;
 }
 
 .rodape li:first-child {
@@ -328,7 +322,7 @@ nav a:hover {
 }
 
 
-
+ 
 
 /*Responsividade - galeria.html*/
 
