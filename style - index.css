@@ -47,12 +47,11 @@ header {
 }
 
 .icon_link {
-    margin-left: 10px;
     width: 40px;
     height: 40px;
     display: flex;              
     align-items: center;        
-    justify-content: flex-end; 
+    justify-content: center; 
     margin-left: 10px;
     padding: 5px;
 }   
@@ -146,6 +145,7 @@ nav a:hover {
     font-style: italic;
     color: yellow;
 }
+
 
 .main-wrapper {
     display: flex;

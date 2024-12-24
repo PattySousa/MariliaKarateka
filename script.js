@@ -1,8 +1,10 @@
-$(document).ready(function(){
+  /* JS do galeria.html - desenvolvido por Patrícia Sousa*/
+
+  $(document).ready(function () {
     let currentIndex = 0;
     const totalItems = $('#carousel li').length;
   
-    $('#next').click(function(e) {
+    $('#next').click(function (e) {
       e.preventDefault();
       if (currentIndex < totalItems - 1) {
         currentIndex++;
@@ -12,7 +14,7 @@ $(document).ready(function(){
       updateCarousel();
     });
   
-    $('#prev').click(function(e) {
+    $('#prev').click(function (e) {
       e.preventDefault();
       if (currentIndex > 0) {
         currentIndex--;
@@ -23,9 +25,8 @@ $(document).ready(function(){
     });
   
     function updateCarousel() {
-      const offset = -currentIndex * 100;
-      $('#carousel').css('transform', 'translateX(' + offset + '%)');
+      const offset = -currentIndex * 550; // Deslocamento de 550px para o tamanho da imagem
+      $('#carousel').css('transform', 'translateX(' + offset + 'px)');
     }
   });
   
-  /* JS do galeria.html - desenvolvido por Patrícia Sousa*/
