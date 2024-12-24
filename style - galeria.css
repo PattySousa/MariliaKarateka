@@ -190,8 +190,8 @@ nav a:hover {
   }
   
   #carousel li {
-    min-width: 550px; /* Ajuste para que as imagens fiquem com 550px */
-    height: 550px;   /* Ajuste para a altura desejada */
+    min-width: 550px; 
+    height: 550px;   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,7 +200,7 @@ nav a:hover {
   #carousel img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Para manter a proporção da imagem sem distorcer */
+    object-fit: cover; 
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
@@ -280,49 +280,49 @@ nav a:hover {
 /* CSS Rodape do (galeria.html)*/
 
 footer {
-    width: 100%;                /* Footer ocupa 100% da largura */
-    height: 80px;               /* Footer ocupa 100% da altura */
-    display: flex;              /* Flex container para centralizar os elementos */
-    justify-content: center;    /* Centraliza o rodapé horizontalmente */
-    align-items: center;        /* Centraliza o rodapé verticalmente */
+    width: 100%;                
+    height: 80px;               
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
     background: #888888;
 }
 
 .rodape {
-    display: flex;              /* Flex container interno */
-    align-items: center;        /* Centraliza logo e texto verticalmente */
-    text-align: left;           /* Texto alinhado à esquerda */
+    display: flex;             
+    align-items: center;        
+    text-align: left;           
     color: #FFFFFF;
     font-size: 12px;
     font-weight: bold;
 }
 
 .rodape img.logo {
-    width: 70px;               /* Tamanho da logo */
-    height: 70px;               /* Mantém proporção da logo */
-    margin-right: 20px;         /* Espaçamento entre logo e texto */
+    width: 70px;               
+    height: 70px;               
+    margin-right: 20px;         
 }
 
 .rodape-texto {
     display: flex;
-    flex-direction: column;     /* Coloca os parágrafos em uma coluna */
-    justify-content: center;    /* Centraliza os textos verticalmente */
-    line-height: 1.5;           /* Espaçamento entre linhas */
+    flex-direction: column;    
+    justify-content: center;    
+    line-height: 1.5;           
 }
 
 .rodape-texto p {
     margin: 0; 
-                     /* Remove margens dos parágrafos */
+                     
 }
 
 .rodape a {
-    color: #FFAAAA;             /* Cor do link */
-    text-decoration: none;      /* Remove sublinhado */
+    color: #FFAAAA;            
+    text-decoration: none;      
     font-weight: bold;
 }
 
 .rodape a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline; 
 }
 
 
