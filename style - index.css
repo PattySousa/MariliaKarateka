@@ -48,7 +48,7 @@ header {
 
 .icon_link {
     width: 40px;
-    height: 40px;
+    height: 30px;
     display: flex;              
     align-items: center;        
     justify-content: center; 
@@ -366,60 +366,52 @@ nav a:hover {
 
 /* CSS Rodape do (index.html)*/
 
-.rodape {
-    color: #FFFFFF;
-     background: #888888;
-     font-size: 12px;
-     font-weight: bold;
-     margin: 0px 0 0;
-     text-align: center;
-     display: flex; 
-     align-items: center; 
-     justify-content: center;
+footer {
+    width: 100%;                /* Footer ocupa 100% da largura */
+    height: 80px;               /* Footer ocupa 100% da altura */
+    display: flex;              /* Flex container para centralizar os elementos */
+    justify-content: center;    /* Centraliza o rodapé horizontalmente */
+    align-items: center;        /* Centraliza o rodapé verticalmente */
+    background: #888888;
 }
 
-.rodape ol {
-     align-items: center;
-     margin-top: 10px;
-     width: 80px;
-     height: 80px;
+.rodape {
+    display: flex;              /* Flex container interno */
+    align-items: center;        /* Centraliza logo e texto verticalmente */
+    text-align: left;           /* Texto alinhado à esquerda */
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .rodape img.logo {
-     width: 60px;
-     height: 50px;
+    width: 70px;               /* Tamanho da logo */
+    height: 70px;               /* Mantém proporção da logo */
+    margin-right: 20px;         /* Espaçamento entre logo e texto */
 }
 
-.rodape li {
-    display: inline-flex;
-    justify-content: right;
-    align-items: right;
-    line-height: 1.2;
-    width: 200px;
-    height: 10px;
-    margin: 5px 0 5px 150px;
-    color: #E0E0E0;
+.rodape-texto {
+    display: flex;
+    flex-direction: column;     /* Coloca os parágrafos em uma coluna */
+    justify-content: center;    /* Centraliza os textos verticalmente */
+    line-height: 1.5;           /* Espaçamento entre linhas */
 }
 
-.rodape a { 
-    text-transform: uppercase;
+.rodape-texto p {
+    margin: 0; 
+                     /* Remove margens dos parágrafos */
+}
+
+.rodape a {
+    color: #FFAAAA;             /* Cor do link */
+    text-decoration: none;      /* Remove sublinhado */
     font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    display: inline-block;
-    padding: 10px 10px 5px 10px;
-    text-decoration: none;
-    position: relative;
-    color: #FFAAAA;
 }
 
-.rodape li:first-child {
-    height: 20px; 
+.rodape a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
-.rodape li:last-child {
-    height: 30px; 
-}
   
 
 /* Responsividade - index.html*/
