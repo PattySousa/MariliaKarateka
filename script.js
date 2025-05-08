@@ -25,8 +25,9 @@
     });
   
     function updateCarousel() {
-      const offset = -currentIndex * 550; // Deslocamento de 550px para o tamanho da imagem
-      $('#carousel').css('transform', 'translateX(' + offset + 'px)');
-    }
-  });
-  
+    // Pega a largura atual do container, que muda conforme o dispositivo
+    const containerWidth = $('.carousel-container').width();
+    const offset = -currentIndex * containerWidth;
+    $('#carousel').css('transform', 'translateX(' + offset + 'px)');
+    });
+  }
