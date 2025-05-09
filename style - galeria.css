@@ -449,11 +449,17 @@ footer {
         padding: 0.3rem 0.6rem;
     }
     .galeria li {
-        width: 30%; /*troquei de 90% para 45% para ajustar a responsividade*/
-        min-width: 50px;
+        width: 55%; /*troquei de 90% para 55% para ajustar a responsividade*/
+        min-width: 150px;
         /*margin: 10px auto;
         display: block;*/
     }
+
+    .galeria_video video{
+        width: 60%;
+        height: 60%;
+    }
+
     .wrapper_titulo {
         font-size: 1.2rem;
         padding: 20px 0 20px 0;
