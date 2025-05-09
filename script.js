@@ -26,8 +26,8 @@
   
     function updateCarousel() {
     // Pega a largura atual do container, que muda conforme o dispositivo
-    const containerWidth = $('.carousel-container').width();
-    const offset = -currentIndex * containerWidth;
-    $('#carousel').css('transform', 'translateX(' + offset + 'px)');
-    });
-  }
+     const containerWidth = $('.carousel-container').width();
+     const offset = -currentIndex * containerWidth;
+     $('#carousel').css('transform', 'translateX(' + offset + 'px)');
+    };
+  })
