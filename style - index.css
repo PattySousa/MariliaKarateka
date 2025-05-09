@@ -531,6 +531,11 @@ footer {
 
     /* Tablets (até 1024px) */
 @media (max-width: 1024px) {
+     header {
+        height: auto;
+        min-height: 50px;
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
@@ -540,7 +545,8 @@ footer {
     .content,
     .container_img-wrapper {
         max-width: 100%;
-        padding: 10px;
+        padding: 10px 10px 50px 10px;
+        margin: 10px 10px 50px 10px;
     }
 
     nav {
@@ -555,12 +561,58 @@ footer {
 
     nav ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     
     nav li {
         margin: 5px 0;
     }
+
+    .dojo {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #c0c0c0);
+}
+
+.dojo_conteudo {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap; 
+    gap: 100px; 
+}
+
+.dojo_imagem {
+    width: 100%;
+    max-width: 650px; 
+    height: auto;
+    background: #FFFFFF;
+    border: 3px ridge #FEFEFE;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.dojo_texto {
+    flex: 1; 
+    max-width: 500px; 
+    text-align: justify;
+    font-weight: bold;
+    font-size: 28px; 
+    line-height: 1.5;
+    padding: 20px 50px;
+}
+
+.dojo_titulo {
+    color: #FF0000;
+    text-shadow: 3px 3px 2px white;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center; 
+}
 }
 
 /* Celulares (até 600px) */
