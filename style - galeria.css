@@ -356,13 +356,37 @@ footer {
 
 /* Tablets */
 @media (max-width: 1024px) {
+    header {
+        height: auto;
+        min-height: 50px;
+    }
+
+     nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nav_img {
+        margin: 0 0 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 5px 0;
+    }
+
     .carousel-container {
         width: 100%;
         max-width: 100vw;
         aspect-ratio: 1/1;
         height: auto;
     }
-    #carousel li {
+    .carousel li {
         min-width: 100vw;
         height: auto;
     }
@@ -378,17 +402,42 @@ footer {
 
 /* Celulares */
 @media (max-width: 600px) {
+     header {
+        height: auto;
+        min-height: 50px;
+    }
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    .nav_img {
+        width: 56px;
+        height: 52px;
+        margin: 0 0 10px 0;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        margin: 5px 0;
+    }
+    .main-wrapper {
+        padding: 10px;
+    }
+
     .carousel-container {
         width: 100%;
         max-width: 100vw;
         aspect-ratio: 1/1;
         height: auto;
     }
-    #carousel li {
+    .carousel li {
         min-width: 100vw;
         height: auto;
     }
-    #carousel img {
+    .main-wrapper img {
         width: 100vw;
         height: auto;
         max-width: 100vw;
@@ -400,9 +449,10 @@ footer {
         padding: 0.3rem 0.6rem;
     }
     .galeria li {
-        width: 90%;
-        margin: 10px auto;
-        display: block;
+        width: 30%; /*troquei de 90% para 45% para ajustar a responsividade*/
+        min-width: 50px;
+        /*margin: 10px auto;
+        display: block;*/
     }
     .wrapper_titulo {
         font-size: 1.2rem;

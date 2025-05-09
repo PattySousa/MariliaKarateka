@@ -569,21 +569,21 @@ footer {
     }
 
     .dojo {
-    padding: 3em 0;
-    background: linear-gradient(#FEFEFE, #c0c0c0);
-}
+        padding: 3em 0;
+        background: linear-gradient(#FEFEFE, #c0c0c0);
+    }
 
-.dojo_conteudo {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    width: 100%;
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 20px;
-    flex-wrap: wrap; 
-    gap: 100px; 
-}
+    .dojo_conteudo {
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        width: 100%;
+        max-width: 940px;
+        margin: 0 auto;
+        padding: 20px;
+        flex-wrap: wrap; 
+        gap: 100px; 
+    }
 
 .dojo_imagem {
     width: 100%;
