@@ -28,7 +28,7 @@ header {
 .social_container li {
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 9px;
     display: flex;
     list-style: none;
     margin: 5px 0;
@@ -47,7 +47,7 @@ header {
 }
 
 .icon_link {
-    width: 40px;
+    width: 30px;
     height: 30px;
     display: flex;              
     align-items: center;        
@@ -522,261 +522,8 @@ footer {
     
 }
 
-/* Ajustes para telas entre 595px e 800px */
-@media (max-width: 879px) and (min-width: 600px) {
-
-    .social_container {
-        width: 100%; 
-        max-width: 879px; 
-        margin: 0 auto;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .social_icons {
-        justify-content: center;
-        margin-top: 10px; 
-
-    }
-
-    .icon_link {
-        margin: 5px;
-        width: 30px; 
-        height: 30px; 
-    }
-
-    .beneficios_titulo {
-        padding-top: 60px;
-        padding-bottom: 40px;
-    }
-
-    
-    .beneficios_imagem {
-        width: 90%;
-    }    
 
 
-    .beneficios_conteudo {
-        display: flex;
-        align-items: right;
-	    justify-content: right;
-	    text-align: right;
-        width: 95%;
-        height: 95%
-    }
-
-    .beneficios_lista {
-        width: 60%;
-        margin: 0 auto;
-    }
-
-    .beneficios_itens {
-        font-size: 20px;
-    }
-
-    .mestre {
-        width: 30%;
-        height: 40%;
-        margin-right: 30px;
-        margin-left: 0;
-    }
-
-
-    .dojo_imagem {
-        max-width: 95%;
-    }
-
-    .container_img {
-        max-width: 90%;
-    }
-
-    .principal_titulo {
-        font-size: 30px;
-        padding: 120px 30px 10px 0;
-    }
-
-    .principal p {
-        font-size: 30px;
-    }
-
-    .dojo p {
-        font-size: 30px;
-    }
-
-    .dojo_conteudo {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-}
-
-/* Ajustes para telas entre 880px e 1240px */
-@media (max-width: 1940px) and (min-width: 880px) {
-    
-    .social_container {
-        width: 100%; 
-        max-width: 1940px; 
-        margin: 0 auto; 
-        padding: 10px;
-        text-align: center;
-    }
-
-    .social_icons {
-        justify-content: center;
-        margin-top: 10px; 
-        flex-wrap: wrap;
-    }
-
-    .icon_link {
-        margin: 5px;
-        width: 30px; 
-        height: 30px; 
-    }
-
-
-    .beneficios_itens {
-        font-size: 15px;
-    }
-
-    .beneficios_imagem {
-        width: 90%;
-    }
-
-
-    .beneficios_conteudo {
-        display: flex;
-        align-items: right;
-	    justify-content: right;
-	    text-align: right;
-        width: 95%;
-        height: 95%;
-    }
-
-    .beneficios_lista {
-        width: 60%;
-        margin: 0 auto;
-    }
-
-    .beneficios_itens {
-        font-size: 20px;
-    }
-
-    .mestre {
-        width: 30%;
-        height: 40%;
-        margin-right: 30px;
-        margin-left: 0;
-    }
-}
-
-
-
-/* Ajustes para telas abaixo de 599px */
-@media (max-width: 599px) and (min-width: 300px) {
-    
-    .principal p {
-        font-size: 20px;
-    }
-
-    .dojo p {
-        font-size: 20px;
-        padding: 5px 10px 5px 10px;
-    }
-
-    .dojo_conteudo {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .dojo_titulo {
-        font-size: 25px;
-	    padding: 5px 10px 0px 10px;
-    }
-
-    .beneficios_titulo {
-        font-size: 20px;
-	    padding: 90px 20px 40px 20px;
-    }
-
-    .principal_titulo {
-        font-size: 20px;
-	    padding: 70px 20px 10px 20px;
-    }
-
-
-    .beneficios_imagem {
-        width: 80%;
-    }
-
-    .beneficios_conteudo {
-        display: flex;
-        align-items: right;
-	    justify-content: right;
-	    text-align: right;
-        width: 100%;
-        height: 100%;
-        margin-right: 20px;
-        margin-left: 1px;
-    }
-
-    .beneficios_itens:before {
-        content: "🟊";
-        margin-right: 5px;
-    }
-
-    .beneficios_lista {
-        width: 55%;
-        margin: 0 auto;
-        text-indent: 10px;
-    }
-
-    .beneficios_itens {
-        font-size: 12px;
-        line-height: 1;
-        margin-bottom: 2px;
-        margin-left: 0;
-    }
-
-    .mestre {
-        width: 40%;
-        height: 50%;
-        margin-right: 15px;
-        margin-left: 0;
-    }
-
-    .nav-arrows {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
-    }
-
-    .nav-arrows a {
-        font-size: 5px;
-        padding: 5px;
-    }
-
-    .social_container {
-        width: 100%; 
-        max-width: 599px; 
-        margin: 0 auto;
-        padding: 5px;
-        text-align: center;
-    }
-
-    .social_icons {
-        justify-content: center;
-        margin-top: 10px;
-        flex-wrap: wrap;
-    } 
-    
-
-    .icon_link {
-        width: 25px; 
-        height: 25px;
-    }
 
     /* Tablets (até 1024px) */
 @media (max-width: 1024px) {
@@ -791,18 +538,22 @@ footer {
         max-width: 100%;
         padding: 10px;
     }
+
     nav {
         flex-direction: column;
         height: auto;
         padding: 10px 0;
     }
+
     .nav_img {
         margin: 0 0 10px 0;
     }
+
     nav ul {
         flex-direction: column;
         align-items: flex-start;
     }
+    
     nav li {
         margin: 5px 0;
     }
@@ -834,6 +585,41 @@ footer {
     .main-wrapper {
         padding: 10px;
     }
+
+    .container_img-background {
+        position: absolute;
+        width: 105%;
+        height: 105%;
+        background: linear-gradient(135deg, #800080, #FF69B4, #FF0000);
+        border-radius: 20px;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        transform: translate(0, 0);
+       
+    }
+
+    .dojo {
+        margin-top: 200px;
+        
+    }
+
+    .dojo_texto {
+        margin-bottom:10px;
+    }
+
+
+    .beneficios_imagem {
+        width: 90%;
+        margin: 0 10px 30px 15px;
+    }
+
+    .beneficios_lista {
+        width: 90%;
+        margin: 0 10px 100px 10px;
+        font-size: large;
+
+    }
+
     .content h2 {
         font-size: 1.2rem;
     }
