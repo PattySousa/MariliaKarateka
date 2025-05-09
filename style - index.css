@@ -571,13 +571,13 @@ footer {
         padding: 10px 0;
     }
     .nav_img {
-        width: 36px;
-        height: 32px;
+        width: 56px;
+        height: 52px;
         margin: 0 0 10px 0;
     }
     nav ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     nav li {
         margin: 5px 0;
