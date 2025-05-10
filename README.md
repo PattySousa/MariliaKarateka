@@ -31,16 +31,22 @@ Site Marilia Karateka
    
    2-Criei uma pasta chamada Dockerfile (sem extensão), dentro dela adicionei o comando abaixo, fiz commit e dei um push p/o repositório no GitHub: 
 
-   FROM nginx:alpine
-   RUN rm -rf /usr/share/nginx/html/*
-   COPY . /usr/share/nginx/html
-   EXPOSE 80
+      FROM nginx:alpine
+      RUN rm -rf /usr/share/nginx/html/*
+      COPY . /usr/share/nginx/html
+      EXPOSE 80
 
    3-Construí a imagem Docher do site MariliaKarateka, com o comando:
 
-   docker build -t mariliakarateka-site    (caso resolva fazer, substitua após o -t pelo nome do seu site)
+      docker build -t mariliakarateka-site .    (caso resolva fazer, substitua após o -t pelo nome do seu site com o espaço e o .)
 
-   3-
+   4-Rodar o container, digitei o comando abaixo, caso faça, não esqueça de alterar e substibuir pelo nome do seu site:
+
+      docker run -d -p 8080:80 mariliakarateka-site
+
+   5-Abri o navegador e acessei:
+
+      http://localhost:8080
 
    
 
