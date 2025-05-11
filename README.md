@@ -70,17 +70,28 @@ Site Marilia Karateka
 
       https://login.docker.com/active
 
-   11-Entrei com o login e senha de acesso único, retornei ao PowerShell e visualizei Login efetuado com sucesso. Ainda no PowerShell realizei o seguinte comando para dar um push no DockerHub:
+   11-Entrei com o login e senha de acesso único, retornei ao PowerShell e visualizei Login efetuado com sucesso. Ainda no PowerShell realizei o seguinte comando para dar um build no DockerHub, ou seja, construir a imagem do projeto nele:
 
+      docker build -t meuusuário/meusite:latest . 
+
+   =>substituir novamente por seu nome de usuário e o nome do seu site, não esqueça de copiar tudo, inclusive o ponto após o latest.
+
+   12-Depois, segui com o comando abaixo para dar um "push" na imagem no DockerHub:
+    
       docker push meuusuário/meusite:latest 
       
-   =>substituir por seu nome de usuário e o nome do seu site
+   =>substituir por seu nome de usuário e o nome do seu site também.
 
-   12-Depois, segui com o comando abaixo para "buildar" o a imagem no DockerHub:
-
-      docker build -t meuusuário/meusite:latest .   
       
-   =>substituir novamente por seu nome de usuário e o nome do seu site, não esqueça de copiar tudo, inclusive o ponto após o latest.
+   13-Retornando ao DockerHub, consegui visualizar dentro do repositório do meu projeto, em Tags a informação Latest e ao lado o caminho do push da imagem do DokerHub deste repositório.
+
+   14-Depois, fui configurar o Kubernetes que usarei no projeto. Instalei o Minikube, no link abaixo:
+
+      https://minikube.sigs.k8s.io/docs/start/
+
+   15-No Power Shell, digitei o comando abaixo para iniciar o cluster do kubernetes:
+
+      minikube start
 
 
 
