@@ -89,7 +89,7 @@ Site Marilia Karateka
 
       https://minikube.sigs.k8s.io/docs/start/
 
-   15-Depois, fui até o diretório C: da minha máquina, achei a pasta Minikube, cliquei com o botão direito do mouse e mandei abrir no Power Shell e digiteio  comando abaixo para iniciar o cluster do kubernetes, usará o Docker Desktop como Backend, precisa mantê-lo aberto, pode fechar o DockerHub:
+   15-Depois, fui até o botão Iniciar do Windows, aquele que fica na nossa áres de trabalho, pesquisei por PowerShell e mantei abrir coo administrador, o minikube usará o Docker Desktop como Backend, precisa mantê-lo aberto, pode fechar o DockerHub:
 
       minikube start -- driver=docker
 
