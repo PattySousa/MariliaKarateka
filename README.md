@@ -38,7 +38,7 @@ Site Marilia Karateka
 
    3-Construí a imagem Docher do site MariliaKarateka, com o comando:
 
-      docker build -t mariliakarateka-site .    (caso resolva fazer, substitua após o -t pelo nome do seu site com o espaço e o .)
+      docker build -t nomedomeusite-site .    (caso resolva fazer, substitua após o -t (nomedomeusite) pelo nome do seu site com o espaço e o .)
 
    4-Rodar o container, digitei o comando abaixo, caso faça, não esqueça de alterar e substibuir pelo nome do seu site:
 
@@ -48,7 +48,39 @@ Site Marilia Karateka
 
       http://localhost:8080
 
-   
+   6-Minha máquina começou a ficar extremamente lenta, após muitas pesquisas descobri que o Dockerfile era o problema, estava consumindo muita memóra local dela e estava quase parando, literalmente. Para ajustar, tive que ir no diretório C: da minha máquina, acessar meu usuário e criar um arquivo com o nome .wslconfig, sem nenhuma extensão e restringir para apenas 1GB e 1 processador meu projeto no Dockerfile. Dentro deste arquivo, colei o seguinte script de configuração: 
+
+      [wsl2]
+      memory=1GB
+      processors=1
+
+   7-Fechei o Docker Desktop, abri o PowerShell para o digitar o comando abaixo e em seguida, abri novamente o Docker Desktop, para poder atualizar e reduzir o tamanho da memória de utilização local de minha máquina.
+
+      wsl --shutdown
+
+   8-Depois, acessei o site DockerHub, link abaixo, criei meu usuário para gerar a imagem do projeto no DockerHub: 
+
+       https://hub.docker.com
+
+   9-Voltei na pasta raiz do projeto, em minha máquina, cliquei com botão direito nela, mandei abrir o PowerShell, assim o caminho do projeto já estaria configurado para os próximos passos. Adicionei o comando abaixo para login do docker:
+
+       docker login
+
+   10-Este comando gerou uma chave de acesso único. Acessei o site abaixo, conforme instrução, para colar a chave de acesso e identificar o docker: 
+
+      https://login.docker.com/active
+
+   11-Entrei com o login e senha de acesso único, retornei ao PowerShell e visualizei Login efetuado com sucesso. Ainda no PowerShell realizei o seguinte comando para dar um push no DockerHub:
+
+      docker push meuusuário/meusite:latest 
+      
+   =>substituir por seu nome de usuário e o nome do seu site
+
+   12-Depois, segui com o comando abaixo para "buildar" o a imagem no DockerHub:
+
+      docker build -t meuusuário/meusite:latest .   
+      
+   =>substituir novamente por seu nome de usuário e o nome do seu site, não esqueça de copiar tudo, inclusive o ponto após o latest.
 
 
 
