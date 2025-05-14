@@ -179,7 +179,33 @@ Site Marilia Karateka
    COPY . /usr/share/nginx/html: copia os arquivos da aplicação para a pasta padrão do NGINX.
    EXPOSE 80: expõe a porta 80 para acesso via HTTP.
 
-25-Adicionando a Pipeline CI/CD ao projeto (se você for fazer, não esqueça de substituir a descrição NomeDoSeuUsuáriodoGitHub/NomeDoSeuProjeto, por suas respectivas informações, exemplo: DesenvolvedorExpert/ProjetoCalendário: 
+25-Passo a Passo para Configurar os Secrets do Repositório no GitHub, que serão utilizados na Pipeline para autenticação e deploy. 
+
+   =>No GitHub, acesse a página principal do seu repositório.
+      Clique em "Settings".
+      No menu lateral, clique em "Secrets and variables" e depois em "Actions".
+      Clique em "New repository secret".
+      Para adicionar o DOCKERHUB_USERNAME:
+      a. Em "Name", digite: DOCKERHUB_USERNAME.
+      b. Em "Secret", cole seu nome de usuário do Docker Hub.
+      c. Clique em "Add secret".
+
+   =>Para adicionar o DOCKERHUB_TOKEN:
+     a. Clique em "New repository secret".
+     b. Em "Name", digite: DOCKERHUB_TOKEN.
+     c. Em "Secret", cole o token gerado no Docker Hub.
+     d. Clique em "Add secret".
+
+   =>Para adicionar o KUBECONFIG_BASE64:
+     a. Clique em "New repository secret".
+     b. Em "Name", digite: KUBECONFIG_BASE64.
+     c. Em "Secret", cole a string Base64 do seu kubeconfig (gerada com cat ~/.kube/config | base64 -w 0 ou similar).
+     d. Clique em "Add secret".
+
+   =>Após seguir estes passos, você terá adicionado com sucesso os secrets DOCKERHUB_USERNAME, DOCKERHUB_TOKEN e KUBECONFIG_BASE64 ao seu repositório do GitHub. Estes secrets estarão disponíveis para serem usados de forma segura no workflows de GitHub Actions para realizar a autenticação com o Docker Hub e o seu cluster Kubernetes durante os processos de CI/CD.
+
+
+26-Adicionando a Pipeline CI/CD ao projeto (se você for fazer, não esqueça de substituir a descrição NomeDoSeuUsuáriodoGitHub/NomeDoSeuProjeto, por suas respectivas informações, exemplo: DesenvolvedorExpert/ProjetoCalendário: 
 
       name: CI/CD Pipeline
 
