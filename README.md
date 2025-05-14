@@ -205,7 +205,22 @@ Site Marilia Karateka
    =>Após seguir estes passos, você terá adicionado com sucesso os secrets DOCKERHUB_USERNAME, DOCKERHUB_TOKEN e KUBECONFIG_BASE64 ao seu repositório do GitHub. Estes secrets estarão disponíveis para serem usados de forma segura no workflows de GitHub Actions para realizar a autenticação com o Docker Hub e o seu cluster Kubernetes durante os processos de CI/CD.
 
 
-26-Adicionando a Pipeline CI/CD ao projeto (se você for fazer, não esqueça de substituir a descrição NomeDoSeuUsuáriodoGitHub/NomeDoSeuProjeto, por suas respectivas informações, exemplo: DesenvolvedorExpert/ProjetoCalendário: 
+26-Passo a Passo: CI/CD com GitHub Actions
+     1. Crie a pasta e o arquivo do workflow
+     Abra o terminal integrado do VSCode na raiz do seu projeto e execute, no Bash:
+
+      mkdir -p .github/workflows
+
+   Depois, crie o arquivo do workflow (pode ser pelo terminal ou pelo VSCode Explorer), no terminal do Bash:
+
+      code .github/workflows/ci-cd.yml
+
+   Ou crie manualmente pelo VSCode (preferi criar manualmente):
+   Navegue até .github/workflows/
+   Clique com o botão direito > Novo Arquivo > ci-cd.yml
+
+
+27-Adicionando a Pipeline CI/CD ao projeto (se você for fazer, não esqueça de substituir a descrição NomeDoSeuUsuáriodoGitHub/NomeDoSeuProjeto, por suas respectivas informações, exemplo: DesenvolvedorExpert/ProjetoCalendário: 
 
       name: CI/CD Pipeline
 
@@ -246,8 +261,8 @@ Site Marilia Karateka
                --set image.repository=NomeDoSeuUsuáriodoGitHub/NomeDoSeuProjeto \
                --set image.tag=latest
 
-26-Explicação do Workflow CI/CD (acima)
-   *Este pipeline automatiza o build, push e deploy da aplicação:
+28-Explicação do Workflow CI/CD (acima)
+      Este pipeline automatiza o build, push e deploy da aplicação:
       Disparo: Executa automaticamente em push na branch main.
 
    =>Etapa build-and-push:
@@ -262,7 +277,12 @@ Site Marilia Karateka
       Executa o deploy no Kubernetes usando helm upgrade --install, passando o nome da imagem e tag. Obs.: O deploy pode ser feito em qualquer cluster Kubernetes (não depende da Azure). A action azure/setup-helm@v4 apenas instala o Helm.
 
 
-      
+29-Fazer commit e push do workflow
+   No terminal do Bash, colar:
+
+      git add .github/workflows/ci-cd.yml
+      git commit -m "Adiciona pipeline CI/CD com build e deploy"
+      git push origin main      
 
 
 
