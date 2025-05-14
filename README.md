@@ -156,15 +156,28 @@ Site Marilia Karateka
             targetPort: 80
             nodePort: 30080
 
-22-Atualizei o Dockerfile com:
+22-Este manifesto Kubernetes define um Service que expõe a aplicação no cluster:
+
+   apiVersion: v1 e kind: Service: define que o recurso criado é um Service.
+   metadata.name: usa o nome do Helm Chart com o sufixo -service.
+   spec.type: o tipo do serviço (ex: NodePort, ClusterIP, etc.) é definido via valores do Helm (Values.service.type).
+   selector: direciona o tráfego para os pods com o label app igual ao nome do Chart.
+   ports:
+   port: a porta exposta pelo serviço (vinda do values.yaml).
+   targetPort: porta interna do container (fixa em 80).
+   nodePort: porta fixa do nó para acesso externo (30080).
+
+23-Em seguida, atualizei o Dockerfile com:
 
       FROM nginx:alpine
       COPY . /usr/share/nginx/html
       EXPOSE 80
 
+24-No Dockerfile: 
 
-
-
+   FROM nginx:alpine: usa uma imagem leve do NGINX como base.
+   COPY . /usr/share/nginx/html: copia os arquivos da aplicação para a pasta padrão do NGINX.
+   EXPOSE 80: expõe a porta 80 para acesso via HTTP.
 
 
 
