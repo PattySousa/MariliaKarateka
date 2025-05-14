@@ -1,0 +1,9 @@
+
+replicaCount: 1
+image:
+  repository: pattysousa/mariliakarateka
+  tag: latest
+service:
+  type: NodePort
+  port: 80
+
