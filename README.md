@@ -108,7 +108,64 @@ Site Marilia Karateka
         port: 80
       " > charts/values.yaml
 
-   18- O replicaCount acima é a quantidade de réplicas(pods) que o Kubernetes irá criar para o deployment. Repository, colocar Usuário/Nome Projeto. Tag é a parte da imagem Docker a ser utilizada. Type: Tipo de serviço Kubernetes (ex: NodePort expõe a aplicação em uma porta do nó). Porta utilizada 80, porta interna do serviço (porta do container padrão do NGINX)
+   18- O replicaCount acima é a quantidade de réplicas(pods) que o Kubernetes irá criar para o deployment. Repository, colocar Usuário/Nome Projeto. Tag é a parte da imagem Docker a ser utilizada. Type: Tipo de serviço Kubernetes (ex: NodePort expõe a aplicação em uma porta do nó). Porta utilizada 80, porta interna do serviço (porta do container padrão do NGINX.
+
+   19-Criei dentro de charts/templates/ um arquivo chamado deployment.yaml, com a seguinte estrutura: 
+
+      apiVersion: apps/v1
+      kind: Deployment
+      metadata:
+        name: {{ .Chart.Name }}
+      spec:
+        replicas: {{ .Values.replicaCount }}
+        selector:
+          matchLabels:
+            app: {{ .Chart.Name }}
+        template:
+          metadata:
+            labels:
+              app: {{ .Chart.Name }}
+          spec:
+            containers:
+            - name: {{ .Chart.Name }}
+              image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+              ports:
+            - containerPort: 80
+
+20-Principais campos do template Helm acima =>deployment.yaml
+
+   replicas: Controla o número de instâncias (pods) do site em execução.
+   image.repository / image.tag: Permite trocar facilmente a imagem Docker e a versão/tag utilizada.
+   containerPort: Porta exposta pelo container, normalmente 80 para aplicações web.
+   labels: Usados para garantir que o Service encontre corretamente os pods criados pelo Deployment.
+   =>Esses campos tornam o deploy flexível e fácil de atualizar, bastando alterar o arquivo (values.yaml) para escalar ou trocar a imagem da aplicação.
+
+
+21-Criei charts/templates/service.yaml com:
+
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: {{ .Chart.Name }}-service
+      spec:
+        type: {{ .Values.service.type }}
+        selector:
+          app: {{ .Chart.Name }}
+        ports:
+          - port: {{ .Values.service.port }}
+            targetPort: 80
+            nodePort: 30080
+
+22-Atualizei o Dockerfile com:
+
+      FROM nginx:alpine
+      COPY . /usr/share/nginx/html
+      EXPOSE 80
+
+
+
+
+
 
 
       
