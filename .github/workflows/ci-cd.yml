@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to Kubernetes
         env:
           KUBECONFIG: ${{ secrets.KUBECONFIG }}
-        run: |
+        run: |  
           helm upgrade --install MariliaKarateka ./charts \
             --set image.repository=patriciasousa/mariliakarateka \
             --set image.tag=latest
