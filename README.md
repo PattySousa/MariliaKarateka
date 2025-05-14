@@ -85,17 +85,7 @@ Site Marilia Karateka
       
    13-Retornando ao DockerHub, consegui visualizar dentro do repositório do meu projeto, em Tags a informação Latest e ao lado o caminho do push da imagem do DokerHub deste repositório.
 
-   14-Depois, fui configurar o Kubernetes que usarei no projeto. Instalei o Minikube, no link abaixo:
-
-      https://minikube.sigs.k8s.io/docs/start/
-
-   15-Depois, fui até o botão Iniciar do Windows, aquele que fica na nossa áres de trabalho, pesquisei por PowerShell e mantei abrir coo administrador, o minikube usará o Docker Desktop como Backend, precisa mantê-lo aberto, pode fechar o DockerHub:
-
-      minikube start -- driver=docker
-
-   16-Caso prefira, pode usar o comando abaixo para definir o Docker Desktop como backend padrão no Minikube, basta usar o seguinte caminho:
-
-      minikube config set driver docker 
+   14-Depois, fui configurar o Kubernetes que usarei no projeto. 
 
    17-
 
