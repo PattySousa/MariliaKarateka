@@ -85,9 +85,33 @@ Site Marilia Karateka
       
    13-Retornando ao DockerHub, consegui visualizar dentro do repositório do meu projeto, em Tags a informação Latest e ao lado o caminho do push da imagem do DokerHub deste repositório.
 
-   14-Depois, fui configurar o Kubernetes que usarei no projeto. 
+   14-Depois, fui configurar o Kubernetes que usarei no projeto. Inicialmente configurei com minikube, minha máquina ficou muito lenta. Depois, testei configurar um túnel direto do meu projeto ligando o Kubernetes criado ao Cloudflare, testei no localhost, rodou, configurei um domínio e rodou liso, mas...quando eu desligava a máquina o site saía do ar, pois eu havia criado um túnel, configurando o DNS do Cloudflare, apenas de funcionar não cumpriu o propósito esperado, pois não podia ficar 24hs com minha máquina ligada né kkk. Então precisei estudar, pesquisar e implementar uma solução diferente para o site. Entãi optei pelo Helm Chart para direcionar o k8s. 
 
-   17-
+   15- Para instalação do Helm Charts usei no PowerShell do VSCode: 
+
+       helm create charts
+
+   16-Removi os charts que haviam de exemplo para criar meus próprios templates, troquei o terminal do PowerShell para o do Bash no VSCode: 
+
+      rm -rf charts/templates/tests
+      rm charts/values.yaml charts/templates/*.yaml
+
+   17-Criei o arquivo values.yaml:
+
+      echo "
+      replicaCount: 1
+      image:
+         repository: colocaronomedoseuusuário/colocaronomedoseuprojeto
+         tag: latest
+      service:
+        type: NodePort
+        port: 80
+      " > charts/values.yaml
+
+   18- O replicaCount acima é a quantidade de réplicas(pods) que o Kubernetes irá criar para o deployment. Repository, colocar Usuário/Nome Projeto. Tag é a parte da imagem Docker a ser utilizada. Type: Tipo de serviço Kubernetes (ex: NodePort expõe a aplicação em uma porta do nó). Porta utilizada 80, porta interna do serviço (porta do container padrão do NGINX)
+
+
+      
 
 
 
