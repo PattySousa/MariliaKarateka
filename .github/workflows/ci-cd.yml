@@ -31,8 +31,11 @@ jobs:
         uses: azure/setup-helm@v4
       - name: Deploy to Kubernetes
         env:
-          KUBECONFIG: ${{ secrets.KUBECONFIG }}
-        run: |  
+          KUBECONFIG_BASE64: ${{ secrets.KUBECONFIG_BASE64 }} 
+        run: |
+          echo "$KUBECONFIG_BASE64" | base64 -d > kubeconfig 
+          export KUBECONFIG=$(pwd)/kubeconfig 
+          kubectl get pods 
           helm upgrade --install MariliaKarateka ./charts \
             --set image.repository=patriciasousa/mariliakarateka \
             --set image.tag=latest
