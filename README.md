@@ -173,12 +173,67 @@ Site Marilia Karateka
       COPY . /usr/share/nginx/html
       EXPOSE 80
 
-24-No Dockerfile: 
+24-No Dockerfile, as informações importantes são: 
 
    FROM nginx:alpine: usa uma imagem leve do NGINX como base.
    COPY . /usr/share/nginx/html: copia os arquivos da aplicação para a pasta padrão do NGINX.
    EXPOSE 80: expõe a porta 80 para acesso via HTTP.
 
+25-Adicionando a Pipeline CI/CD ao projeto (se você for fazer, não esqueça de substituir a descrição NomeDoSeuUsuáriodoGitHub/NomeDoSeuProjeto, por suas respectivas informações, exemplo: DesenvolvedorExpert/ProjetoCalendário: 
+
+      name: CI/CD Pipeline
+
+      on:
+        push:
+          branches: [ main ]
+
+      jobs:
+        build-and-push:
+          runs-on: ubuntu-latest
+          steps:
+         - uses: actions/checkout@v4
+
+         - name: Build Docker image
+           run: docker build -t NomeDoSeuUsuáriodoGitHub/NomeDoSeuProjeto:latest .
+
+         - name: Login to Docker Hub
+           uses: docker/login-action@v3
+           with:
+             username: ${{ secrets.DOCKERHUB_USERNAME }}
+             password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+         - name: Push Docker image
+           run: docker push NomeDoSeuUsuáriodoGitHub/NomeDoSeuProjeto:latest
+
+        deploy:
+          needs: build-and-push
+          runs-on: ubuntu-latest
+          steps:
+            - uses: actions/checkout@v4
+            - name: Setup Helm
+              uses: azure/setup-helm@v4
+            - name: Deploy to Kubernetes
+           env:
+             KUBECONFIG: ${{ secrets.KUBECONFIG }}
+           run: |
+             helm upgrade --install NomeDoSeuProjeto ./charts \
+               --set image.repository=NomeDoSeuUsuáriodoGitHub/NomeDoSeuProjeto \
+               --set image.tag=latest
+
+26-Explicação do Workflow CI/CD (acima)
+   *Este pipeline automatiza o build, push e deploy da aplicação:
+      Disparo: Executa automaticamente em push na branch main.
+
+   =>Etapa build-and-push:
+      Faz checkout do código.
+      Builda a imagem Docker com o nome UsuáriodoGuitHub/NomeDoProjeto:latest.
+      Faz login no Docker Hub usando segredos seguros (DOCKERHUB_USERNAME e DOCKERHUB_TOKEN).
+      Publica a imagem no Docker Hub.
+
+   =>Etapa deploy:
+      Depende da etapa anterior (build-and-push).
+      Instala o Helm com uma GitHub Action oficial da Azure.
+      Executa o deploy no Kubernetes usando helm upgrade --install, passando o nome da imagem e tag. Obs.: O deploy pode ser feito em qualquer cluster Kubernetes (não depende da Azure). A action azure/setup-helm@v4 apenas instala o Helm.
 
 
       
