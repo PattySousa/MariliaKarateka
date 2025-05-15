@@ -39,7 +39,7 @@ jobs:
           kubectl get pods
 
           echo "Aplicando Helm upgrade/install..."
-          helm upgrade --install MariliaKarateka ./charts \
+          helm upgrade --install mariliakarateka ./charts \
             --set image.repository=patriciasousa/mariliakarateka \
             --set image.tag=latest
 
