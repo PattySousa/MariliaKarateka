@@ -41,7 +41,7 @@ jobs:
          shell: bash
          run: |
           echo "Aplicar Helm upgrade/install..."
-          helm upgrade --install mariliakarateka ./charts \
+          helm upgrade --install MariliaKarateka ./charts \
             --set image.repository=patriciasousa/mariliakarateka \
             --set image.tag=latest
 
