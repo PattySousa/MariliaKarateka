@@ -282,7 +282,9 @@ Site Marilia Karateka
 
       git add .github/workflows/ci-cd.yml
       git commit -m "Adiciona pipeline CI/CD com build e deploy"
-      git push origin main      
+      git push origin main     
+
+30-
 
 
 
