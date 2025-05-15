@@ -34,15 +34,34 @@ jobs:
           echo "${{ secrets.KUBECONFIG_BASE64 }}" | base64 -d > kubeconfig
           chmod 600 kubeconfig
           export KUBECONFIG=$(pwd)/kubeconfig
-          echo "Verificando pods no cluster..."
-          kubectl get pods
-
-       - name: Aplicar Helm upgrade/install...
-         shell: bash
+       - name: Verificar contexto Kubeconfig
          run: |
-          echo "Aplicar Helm upgrade/install..."
+          export KUBECONFIG=$(pwd)/kubeconfig
+          kubectl config get-contexts
+       - name: Verificando pods no cluster
+         run: |
+          export KUBECONFIG=$(pwd)/kubeconfig
+          kubectl get pods
+       - name: Test container
+         run: |
+          docker run -d -p 8080:80 --name test-container patriciasousa/mariliakarateka:latest
+          sleep 5
+          curl --fail http://localhost:8080 || (docker logs test-container && exit 1)
+          docker stop test-container
+          docker rm test-container
+       - name: Aplicar Helm upgrade/install
+         run: |
+          export KUBECONFIG=$(pwd)/kubeconfig
+          echo "Aplicando Helm upgrade/install..."
           helm upgrade --install MariliaKarateka ./charts \
-            --set image.repository=patriciasousa/mariliakarateka \
-            --set image.tag=latest
+          --set image.repository=patriciasousa/mariliakarateka \
+          --set image.tag=latest
+       - name: Verificar pods após o Helm
+         run: |
+          export KUBECONFIG=$(pwd)/kubeconfig
+          echo "Verificando os recursos criados..."
+          kubectl get all
+          kubectl describe pods
+
 
         
