@@ -39,5 +39,4 @@ jobs:
           helm upgrade --install MariliaKarateka ./charts \
             --set image.repository=patriciasousa/mariliakarateka \
             --set image.tag=latest
-        env:
-        KUBECONFIG: ${{ secrets.KUBECONFIG_BASE64 }}
+        
