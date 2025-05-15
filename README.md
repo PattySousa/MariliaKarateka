@@ -284,7 +284,7 @@ Site Marilia Karateka
       git commit -m "Adiciona pipeline CI/CD com build e deploy"
       git push origin main     
 
-30-Erro no CI/CD
+30-Erro no CI/CD apenas com Rancher Desktop
 
 
 
