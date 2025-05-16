@@ -54,7 +54,7 @@ jobs:
 
       - name: Deploy com Helm upgrade/install
         run: |
-          helm upgrade --install MariliaKarateka ./charts \
+          helm upgrade --install mariliakarateka ./charts \
             --set image.repository=patriciasousa/mariliakarateka \
             --set image.tag=latest \
             --set image.pullPolicy=Always
