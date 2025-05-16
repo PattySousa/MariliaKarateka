@@ -5,8 +5,8 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   selector:
-    app: {{ include "charts.name" . }}
+    app: {{ include "charts.fullname" . }}
   ports:
     - port: {{ .Values.service.port }}
       targetPort: 80
-      nodePort: 30080
+      nodePort: 31000

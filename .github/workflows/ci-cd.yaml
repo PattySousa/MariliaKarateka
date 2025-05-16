@@ -25,6 +25,8 @@ jobs:
   deploy:
     needs: build-and-push
     runs-on: ubuntu-latest
+    env:
+      KUBECONFIG: ${{ github.workspace }}/kubeconfig
     steps:
       - uses: actions/checkout@v4
 
@@ -36,17 +38,13 @@ jobs:
           echo "${{ secrets.KUBECONFIG_BASE64 }}" | base64 -d > kubeconfig
           chmod 600 kubeconfig
 
-      - name: Verificar contexto Kubeconfig
-        run: |
-          export KUBECONFIG=$(pwd)/kubeconfig
-          kubectl config get-contexts
+      - name: Verificar contexto do cluster
+        run: kubectl config get-contexts
 
       - name: Verificar pods no cluster
-        run: |
-          export KUBECONFIG=$(pwd)/kubeconfig
-          kubectl get pods
+        run: kubectl get pods --all-namespaces
 
-      - name: Test container
+      - name: Test container local
         run: |
           docker run -d -p 8080:80 --name test-container patriciasousa/mariliakarateka:latest
           sleep 5
@@ -54,21 +52,14 @@ jobs:
           docker stop test-container
           docker rm test-container
 
-      - name: Aplicar Helm upgrade/install
+      - name: Deploy com Helm upgrade/install
         run: |
-          export KUBECONFIG=$(pwd)/kubeconfig
-          echo "Aplicando Helm upgrade/install..."
-          helm upgrade --install mariliakarateka ./charts \
-          --set image.repository=patriciasousa/mariliakarateka \
-          --set image.tag=latest
+          helm upgrade --install MariliaKarateka ./charts \
+            --set image.repository=patriciasousa/mariliakarateka \
+            --set image.tag=latest \
+            --set image.pullPolicy=Always
 
-      - name: Verificar pods após o Helm
+      - name: Verificar recursos após Helm
         run: |
-          export KUBECONFIG=$(pwd)/kubeconfig
-          echo "Verificando os recursos criados..."
           kubectl get all
           kubectl describe pods
-
-
-
-        

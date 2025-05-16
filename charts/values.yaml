@@ -1,7 +1,15 @@
 replicaCount: 1
+
 image:
   repository: patriciasousa/mariliakarateka
   tag: latest
+
 service:
   type: NodePort
   port: 80
+
+ingress:
+  enabled: false
+
+version: 0.1.0
+description: Helm chart for mariliakarateka site

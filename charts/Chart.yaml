@@ -1,4 +1,4 @@
 apiVersion: v2
-name: MariliaKarateka
+name: mariliakarateka
 version: 0.1.0
-description: Helm chart for MariliaKarateka site
+description: Helm chart for mariliakarateka site
