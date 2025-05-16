@@ -5,11 +5,13 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   selector:
-    app: {{ include "charts.fullname" . }}
+    app.kubernetes.io/name: {{ include "charts.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
   ports:
     - port: {{ .Values.service.port }}
       targetPort: 80
 {{- if eq .Values.service.type "NodePort" }}
       nodePort: {{ .Values.service.nodePort | default 31000 }}
 {{- end }}
+
 
