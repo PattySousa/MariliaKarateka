@@ -10,7 +10,13 @@ service:
   nodePort: 31000
 
 ingress:
-  enabled: false
+  enabled: true
+  className: nginx
+  hosts:
+  - host: mariliakarateka.local
+    paths:
+    - path: /
+      pathType: Prefix
 
 version: 0.1.0
 description: Helm chart for mariliakarateka site
