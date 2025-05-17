@@ -1,0 +1,10 @@
+[user]
+	email = patriciaribeiro554@gmail.com
+	name = PATRICIA DE SOUSA RIBEIRO
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[safe]
+	directory = C:\\Users\\patri\\site\\mariliakarateka\\actions-runner\\_work\\mariliakarateka\\mariliakarateka
