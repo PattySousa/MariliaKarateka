@@ -1422,3 +1422,2173 @@
 [2025-05-17 13:33:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions'
 [2025-05-17 13:33:38Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/f43a0e5ff2bd294095638e18286ca9a3d1956744' into C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions\_temp_2ddf107f-d995-40df-890c-390cdeae926f\073f9b21-3e5c-466c-8050-22f3cbf54298.zip.
 [2025-05-17 13:33:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6b1335b9-cc8c-4baa-a667-3c85cd24fc39', success rate: 1/1.
+[2025-05-17 13:33:39Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/zipball/f43a0e5ff2bd294095638e18286ca9a3d1956744 X-GitHub-Request-Id: 8946:2B9656:1BCDD:A0C60:6828906B Http Status: OK
+[2025-05-17 13:33:40Z INFO ActionManager] Finished getting action repository.
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Actions': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions'
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Actions': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions'
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-05-17 13:33:40Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Actions': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions'
+[2025-05-17 13:33:40Z INFO ActionManager] Load action that reference repository from 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions\actions\checkout\v3'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Actions': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions'
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-05-17 13:33:40Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-05-17 13:33:40Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-05-17 13:33:40Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-05-17 13:33:40Z INFO JobExtension] Adding .
+[2025-05-17 13:33:40Z INFO JobExtension] Adding .
+[2025-05-17 13:33:40Z INFO JobExtension] Adding .
+[2025-05-17 13:33:40Z INFO JobExtension] Adding .
+[2025-05-17 13:33:40Z INFO JobExtension] Adding .
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:33:40Z INFO JobExtension] Total accessible running process: 257.
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:33:40Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "6b1335b9-cc8c-4baa-a667-3c85cd24fc39",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 4,
+  "startTime": "2025-05-17T13:33:37.5943651Z",
+  "finishTime": "2025-05-17T13:33:40.6536504Z"
+}.
+[2025-05-17 13:33:40Z INFO JobRunner] Total job steps: 5.
+[2025-05-17 13:33:40Z INFO JobRunner] Run all job steps.
+[2025-05-17 13:33:40Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v3'
+[2025-05-17 13:33:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6b1335b9-cc8c-4baa-a667-3c85cd24fc39', success rate: 1/1.
+[2025-05-17 13:33:40Z INFO StepsRunner] Evaluating: success()
+[2025-05-17 13:33:40Z INFO StepsRunner] Result: true
+[2025-05-17 13:33:40Z INFO StepsRunner] Starting the step.
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:33:40Z INFO StepsRunner] Which2: 'chcp'
+[2025-05-17 13:33:40Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper] Process started with process id 16272, waiting for process exit.
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper] Finished process 16272 with exit code 0, and elapsed time 00:00:00.0280651.
+[2025-05-17 13:33:40Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Actions': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions'
+[2025-05-17 13:33:40Z INFO ActionManager] Load action that reference repository from 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions\actions\checkout\v3'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Actions': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions'
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-05-17 13:33:40Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-05-17 13:33:40Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-05-17 13:33:40Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-05-17 13:33:40Z INFO ExecutionContext] Reserve record order 7 to 12 for post job actions.
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:33:40Z INFO ExecutionContext] Write event payload to C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:33:40Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "PattySousa/mariliakarateka"
+}
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 67,
+  "col": 14,
+  "lit": "1"
+}
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "false"
+}
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "false"
+}
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-17 13:33:40Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-05-17 13:33:40Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command error
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command group
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-05-17 13:33:40Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:40Z INFO HostContext] Well known directory 'Externals': 'C:\Users\patri\site\mariliakarateka\actions-runner\externals'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\patri\site\mariliakarateka\actions-runner\externals\node20\bin\node.exe'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions\actions\checkout\v3\dist/index.js"'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\mariliakarateka\mariliakarateka'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-17 13:33:40Z INFO ProcessInvokerWrapper] Process started with process id 13280, waiting for process exit.
+[2025-05-17 13:33:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:41Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-05-17 13:33:41Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-17 13:33:41Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\patri\site\mariliakarateka\actions-runner\_diag\blocks\bca3f4e5-29d1-472f-afad-6ad1bd1346c9_6b1335b9-cc8c-4baa-a667-3c85cd24fc39.1
+[2025-05-17 13:33:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:41Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2025-05-17 13:33:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:42Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-05-17 13:33:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:48Z INFO JobServerQueue] Try to append 3 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 3/3.
+[2025-05-17 13:33:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:50Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:33:50Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:33:50Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:33:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:52Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:33:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:00Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:00Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:02Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:02Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:02Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:02Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:05Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:05Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:10Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:14Z INFO JobServerQueue] Try to append 2 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 2/2.
+[2025-05-17 13:34:14Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:16Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:16Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:20Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:31Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2081c0bb-0f4f-484b-b54e-a863e07505f1', success rate: 1/1.
+[2025-05-17 13:34:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:38Z INFO ProcessInvokerWrapper] Finished process 13280 with exit code 0, and elapsed time 00:00:57.8271289.
+[2025-05-17 13:34:38Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\_runner_file_commands\step_summary_e580ee07-dfa6-4bfa-a695-ab3e1db5b578) is empty; skipping attachment upload
+[2025-05-17 13:34:38Z INFO StepsRunner] Step result: 
+[2025-05-17 13:34:38Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "2081c0bb-0f4f-484b-b54e-a863e07505f1",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [
+    "no submodule mapping found in .gitmodules for path 'actions-runner/_work/mariliakarateka/mariliakarateka'",
+    "Unable to clean or reset the repository. The repository will be recreated instead."
+  ],
+  "executionTimeInSeconds": 59,
+  "startTime": "2025-05-17T13:33:40.6810265Z",
+  "finishTime": "2025-05-17T13:34:38.907615Z"
+}.
+[2025-05-17 13:34:38Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-05-17 13:34:38Z INFO StepsRunner] Current state: job state = ''
+[2025-05-17 13:34:38Z INFO StepsRunner] Processing step: DisplayName='Verificar kubectl'
+[2025-05-17 13:34:39Z INFO StepsRunner] Evaluating: success()
+[2025-05-17 13:34:39Z INFO StepsRunner] Result: true
+[2025-05-17 13:34:39Z INFO StepsRunner] Starting the step.
+[2025-05-17 13:34:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:39Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:39Z INFO StepsRunner] Which2: 'chcp'
+[2025-05-17 13:34:39Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper] Process started with process id 13172, waiting for process exit.
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:39Z INFO ProcessInvokerWrapper] Finished process 13172 with exit code 0, and elapsed time 00:00:00.3503699.
+[2025-05-17 13:34:39Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-05-17 13:34:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:39Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:39Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:34:39Z INFO ExecutionContext] Write event payload to C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-05-17 13:34:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:39Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:39Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:34:39Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-05-17 13:34:39Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command error
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command group
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-05-17 13:34:39Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-05-17 13:34:39Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-17 13:34:39Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\patri\site\mariliakarateka\actions-runner\_diag\blocks\bca3f4e5-29d1-472f-afad-6ad1bd1346c9_2081c0bb-0f4f-484b-b54e-a863e07505f1.1
+[2025-05-17 13:34:39Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-05-17 13:34:39Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-05-17 13:34:40Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-05-17 13:34:40Z INFO ScriptHandler] Defaulting to powershell
+[2025-05-17 13:34:40Z INFO ScriptHandler] Which2: 'powershell'
+[2025-05-17 13:34:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record '1018ee82-e1ef-4af3-b35e-ff0d94bfc1d2', success rate: 1/1.
+[2025-05-17 13:34:40Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-17 13:34:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:40Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:34:40Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-05-17 13:34:40Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-05-17 13:34:40Z INFO ScriptHandler] Defaulting to powershell
+[2025-05-17 13:34:40Z INFO ScriptHandler] Which2: 'powershell'
+[2025-05-17 13:34:40Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-17 13:34:40Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 13:34:40Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-17 13:34:40Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\d8ff1548-a2bf-4966-9d45-8fad9f59a964.ps1'"'
+[2025-05-17 13:34:40Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\mariliakarateka\mariliakarateka'
+[2025-05-17 13:34:40Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 13:34:40Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-17 13:34:40Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-17 13:34:40Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 13:34:40Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-17 13:34:40Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 13:34:40Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-17 13:34:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record '1018ee82-e1ef-4af3-b35e-ff0d94bfc1d2', success rate: 1/1.
+[2025-05-17 13:34:40Z INFO ProcessInvokerWrapper] Process started with process id 15228, waiting for process exit.
+[2025-05-17 13:34:40Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-05-17 13:34:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:41Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:43Z INFO JobServerQueue] Stop aggressive process web console line queue.
+[2025-05-17 13:34:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '1018ee82-e1ef-4af3-b35e-ff0d94bfc1d2', success rate: 1/1.
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper] Finished process 15228 with exit code 0, and elapsed time 00:00:05.0767699.
+[2025-05-17 13:34:45Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\_runner_file_commands\step_summary_2615e8c6-c946-4f85-a190-3ac9c790457c) is empty; skipping attachment upload
+[2025-05-17 13:34:45Z INFO StepsRunner] Step result: 
+[2025-05-17 13:34:45Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "1018ee82-e1ef-4af3-b35e-ff0d94bfc1d2",
+  "stepContextName": "__run",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 7,
+  "startTime": "2025-05-17T13:34:38.9480649Z",
+  "finishTime": "2025-05-17T13:34:45.4584674Z"
+}.
+[2025-05-17 13:34:45Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-05-17 13:34:45Z INFO StepsRunner] Current state: job state = ''
+[2025-05-17 13:34:45Z INFO StepsRunner] Processing step: DisplayName='Verificar contexto Kubernetes'
+[2025-05-17 13:34:45Z INFO StepsRunner] Evaluating: success()
+[2025-05-17 13:34:45Z INFO StepsRunner] Result: true
+[2025-05-17 13:34:45Z INFO StepsRunner] Starting the step.
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:45Z INFO StepsRunner] Which2: 'chcp'
+[2025-05-17 13:34:45Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper] Process started with process id 2968, waiting for process exit.
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper] Finished process 2968 with exit code 0, and elapsed time 00:00:00.1056191.
+[2025-05-17 13:34:45Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:34:45Z INFO ExecutionContext] Write event payload to C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:34:45Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-05-17 13:34:45Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command error
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command group
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-05-17 13:34:45Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-05-17 13:34:45Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-05-17 13:34:45Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-05-17 13:34:45Z INFO ScriptHandler] Defaulting to powershell
+[2025-05-17 13:34:45Z INFO ScriptHandler] Which2: 'powershell'
+[2025-05-17 13:34:45Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:45Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:34:45Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-05-17 13:34:45Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-05-17 13:34:45Z INFO ScriptHandler] Defaulting to powershell
+[2025-05-17 13:34:45Z INFO ScriptHandler] Which2: 'powershell'
+[2025-05-17 13:34:45Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\aa3a5e28-467a-4111-894b-8637b0e0835b.ps1'"'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\mariliakarateka\mariliakarateka'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-17 13:34:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '75de8989-7fd7-4486-93ae-814a6f75ff67', success rate: 1/1.
+[2025-05-17 13:34:45Z INFO ProcessInvokerWrapper] Process started with process id 18020, waiting for process exit.
+[2025-05-17 13:34:45Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-17 13:34:45Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\patri\site\mariliakarateka\actions-runner\_diag\blocks\bca3f4e5-29d1-472f-afad-6ad1bd1346c9_1018ee82-e1ef-4af3-b35e-ff0d94bfc1d2.1
+[2025-05-17 13:34:45Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-05-17 13:34:46Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper] Finished process 18020 with exit code 0, and elapsed time 00:00:01.3857945.
+[2025-05-17 13:34:47Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\_runner_file_commands\step_summary_ad8d761b-94aa-4c8a-86c6-a15aed3b568c) is empty; skipping attachment upload
+[2025-05-17 13:34:47Z INFO StepsRunner] Step result: 
+[2025-05-17 13:34:47Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "75de8989-7fd7-4486-93ae-814a6f75ff67",
+  "stepContextName": "__run_2",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2025-05-17T13:34:45.4685735Z",
+  "finishTime": "2025-05-17T13:34:47.0417789Z"
+}.
+[2025-05-17 13:34:47Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-05-17 13:34:47Z INFO StepsRunner] Current state: job state = ''
+[2025-05-17 13:34:47Z INFO StepsRunner] Processing step: DisplayName='Ver pods no cluster'
+[2025-05-17 13:34:47Z INFO StepsRunner] Evaluating: success()
+[2025-05-17 13:34:47Z INFO StepsRunner] Result: true
+[2025-05-17 13:34:47Z INFO StepsRunner] Starting the step.
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:47Z INFO StepsRunner] Which2: 'chcp'
+[2025-05-17 13:34:47Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper] Process started with process id 9264, waiting for process exit.
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper] Finished process 9264 with exit code 0, and elapsed time 00:00:00.0658243.
+[2025-05-17 13:34:47Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:34:47Z INFO ExecutionContext] Write event payload to C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:34:47Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-05-17 13:34:47Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command error
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command group
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-05-17 13:34:47Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-05-17 13:34:47Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-05-17 13:34:47Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-05-17 13:34:47Z INFO ScriptHandler] Defaulting to powershell
+[2025-05-17 13:34:47Z INFO ScriptHandler] Which2: 'powershell'
+[2025-05-17 13:34:47Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:47Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:34:47Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-05-17 13:34:47Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-05-17 13:34:47Z INFO ScriptHandler] Defaulting to powershell
+[2025-05-17 13:34:47Z INFO ScriptHandler] Which2: 'powershell'
+[2025-05-17 13:34:47Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\3dec6f73-315d-485f-93ff-ef04776c0a91.ps1'"'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\mariliakarateka\mariliakarateka'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-17 13:34:47Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-17 13:34:47Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\patri\site\mariliakarateka\actions-runner\_diag\blocks\bca3f4e5-29d1-472f-afad-6ad1bd1346c9_75de8989-7fd7-4486-93ae-814a6f75ff67.1
+[2025-05-17 13:34:47Z INFO ProcessInvokerWrapper] Process started with process id 14584, waiting for process exit.
+[2025-05-17 13:34:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '75de8989-7fd7-4486-93ae-814a6f75ff67', success rate: 1/1.
+[2025-05-17 13:34:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3a44ea2c-39e2-40ae-ac2b-383a4f0e787c', success rate: 1/1.
+[2025-05-17 13:34:47Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-05-17 13:34:48Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-05-17 13:34:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3a44ea2c-39e2-40ae-ac2b-383a4f0e787c', success rate: 1/1.
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper] Finished process 14584 with exit code 0, and elapsed time 00:00:02.4446114.
+[2025-05-17 13:34:49Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\_runner_file_commands\step_summary_3062fe83-f85c-48d5-a195-c45b03e54fbb) is empty; skipping attachment upload
+[2025-05-17 13:34:49Z INFO StepsRunner] Step result: 
+[2025-05-17 13:34:49Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "3a44ea2c-39e2-40ae-ac2b-383a4f0e787c",
+  "stepContextName": "__run_3",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 3,
+  "startTime": "2025-05-17T13:34:47.0435658Z",
+  "finishTime": "2025-05-17T13:34:49.6335943Z"
+}.
+[2025-05-17 13:34:49Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-05-17 13:34:49Z INFO StepsRunner] Current state: job state = ''
+[2025-05-17 13:34:49Z INFO StepsRunner] Processing step: DisplayName='Deploy com Helm'
+[2025-05-17 13:34:49Z INFO StepsRunner] Evaluating: success()
+[2025-05-17 13:34:49Z INFO StepsRunner] Result: true
+[2025-05-17 13:34:49Z INFO StepsRunner] Starting the step.
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:49Z INFO StepsRunner] Which2: 'chcp'
+[2025-05-17 13:34:49Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper] Process started with process id 6252, waiting for process exit.
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper] Finished process 6252 with exit code 0, and elapsed time 00:00:00.0346823.
+[2025-05-17 13:34:49Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:34:49Z INFO ExecutionContext] Write event payload to C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:34:49Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-05-17 13:34:49Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command error
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command group
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-05-17 13:34:49Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-05-17 13:34:49Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-05-17 13:34:49Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-17 13:34:49Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\patri\site\mariliakarateka\actions-runner\_diag\blocks\bca3f4e5-29d1-472f-afad-6ad1bd1346c9_3a44ea2c-39e2-40ae-ac2b-383a4f0e787c.1
+[2025-05-17 13:34:49Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-05-17 13:34:49Z INFO ScriptHandler] Defaulting to powershell
+[2025-05-17 13:34:49Z INFO ScriptHandler] Which2: 'powershell'
+[2025-05-17 13:34:49Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:49Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:34:49Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-05-17 13:34:49Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-05-17 13:34:49Z INFO ScriptHandler] Defaulting to powershell
+[2025-05-17 13:34:49Z INFO ScriptHandler] Which2: 'powershell'
+[2025-05-17 13:34:49Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\91602bf2-33a2-48bf-b67a-48c1b0a0bc88.ps1'"'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\mariliakarateka\mariliakarateka'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-17 13:34:49Z INFO ProcessInvokerWrapper] Process started with process id 18132, waiting for process exit.
+[2025-05-17 13:34:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'fed4d1c6-0b51-4c8c-ac55-15e86dbe10c8', success rate: 1/1.
+[2025-05-17 13:34:50Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-05-17 13:34:50Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-05-17 13:34:51Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:34:51Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:34:51Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:34:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'fed4d1c6-0b51-4c8c-ac55-15e86dbe10c8', success rate: 1/1.
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper] Finished process 18132 with exit code 0, and elapsed time 00:00:11.4150097.
+[2025-05-17 13:35:01Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\_runner_file_commands\step_summary_be77df81-7651-42a4-be08-a4fb0a76390c) is empty; skipping attachment upload
+[2025-05-17 13:35:01Z INFO StepsRunner] Step result: 
+[2025-05-17 13:35:01Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "fed4d1c6-0b51-4c8c-ac55-15e86dbe10c8",
+  "stepContextName": "__run_4",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 12,
+  "startTime": "2025-05-17T13:34:49.6357063Z",
+  "finishTime": "2025-05-17T13:35:01.2066354Z"
+}.
+[2025-05-17 13:35:01Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-05-17 13:35:01Z INFO StepsRunner] Current state: job state = ''
+[2025-05-17 13:35:01Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v3'
+[2025-05-17 13:35:01Z INFO StepsRunner] Evaluating: always()
+[2025-05-17 13:35:01Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-05-17 13:35:01Z INFO StepsRunner] Result: true
+[2025-05-17 13:35:01Z INFO StepsRunner] Starting the step.
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:35:01Z INFO StepsRunner] Which2: 'chcp'
+[2025-05-17 13:35:01Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:35:01Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-17 13:35:01Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\patri\site\mariliakarateka\actions-runner\_diag\blocks\bca3f4e5-29d1-472f-afad-6ad1bd1346c9_fed4d1c6-0b51-4c8c-ac55-15e86dbe10c8.1
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper] Process started with process id 18032, waiting for process exit.
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper] Finished process 18032 with exit code 0, and elapsed time 00:00:00.1419125.
+[2025-05-17 13:35:01Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Actions': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions'
+[2025-05-17 13:35:01Z INFO ActionManager] Load action that reference repository from 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions\actions\checkout\v3'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Actions': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions'
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-05-17 13:35:01Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-05-17 13:35:01Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-05-17 13:35:01Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:35:01Z INFO ExecutionContext] Write event payload to C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Work': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Temp': 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp'
+[2025-05-17 13:35:01Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "PattySousa/mariliakarateka"
+}
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 67,
+  "col": 14,
+  "lit": "1"
+}
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "false"
+}
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "false"
+}
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-17 13:35:01Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-05-17 13:35:01Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command error
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command group
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-05-17 13:35:01Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:35:01Z INFO HostContext] Well known directory 'Externals': 'C:\Users\patri\site\mariliakarateka\actions-runner\externals'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\patri\site\mariliakarateka\actions-runner\externals\node20\bin\node.exe'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\patri\site\mariliakarateka\actions-runner\_work\_actions\actions\checkout\v3\dist/index.js"'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\_work\mariliakarateka\mariliakarateka'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-17 13:35:01Z INFO ProcessInvokerWrapper] Process started with process id 17104, waiting for process exit.
+[2025-05-17 13:35:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '14a9a683-894d-4420-9429-ab1ae8fb9f0e', success rate: 1/1.
+[2025-05-17 13:35:01Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-05-17 13:35:03Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2025-05-17 13:35:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record '14a9a683-894d-4420-9429-ab1ae8fb9f0e', success rate: 1/1.
+[2025-05-17 13:35:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record '14a9a683-894d-4420-9429-ab1ae8fb9f0e', success rate: 1/1.
+[2025-05-17 13:35:06Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:35:06Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 13:35:06Z INFO ProcessInvokerWrapper] Finished process 17104 with exit code 0, and elapsed time 00:00:04.8181755.
+[2025-05-17 13:35:06Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp\_runner_file_commands\step_summary_1d471201-08d7-466e-bd71-44e71a41831a) is empty; skipping attachment upload
+[2025-05-17 13:35:06Z INFO StepsRunner] Step result: 
+[2025-05-17 13:35:06Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "14a9a683-894d-4420-9429-ab1ae8fb9f0e",
+  "result": "succeeded",
+  "errorMessages": [
+    "The process 'C:\\Program Files\\Git\\cmd\\git.exe' failed with exit code 128"
+  ],
+  "executionTimeInSeconds": 6,
+  "startTime": "2025-05-17T13:35:01.2365343Z",
+  "finishTime": "2025-05-17T13:35:06.4648167Z"
+}.
+[2025-05-17 13:35:06Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-05-17 13:35:06Z INFO StepsRunner] Current state: job state = ''
+[2025-05-17 13:35:06Z INFO JobRunner] Finalize job.
+[2025-05-17 13:35:06Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:35:06Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:35:06Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:35:06Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:35:06Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:35:06Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:35:06Z INFO JobExtension] Initialize Env context
+[2025-05-17 13:35:06Z INFO JobExtension] Initialize steps context
+[2025-05-17 13:35:06Z INFO JobExtension] Total accessible running process: 271.
+[2025-05-17 13:35:06Z INFO JobExtension] Inspecting process environment variables. PID: 12880 (git)
+[2025-05-17 13:35:06Z INFO JobExtension] Inspecting process environment variables. PID: 8660 (conhost)
+[2025-05-17 13:35:06Z INFO JobExtension] Inspecting process environment variables. PID: 15260 (git)
+[2025-05-17 13:35:06Z INFO JobExtension] Inspecting process environment variables. PID: 14832 (sh)
+[2025-05-17 13:35:06Z INFO JobExtension] Inspecting process environment variables. PID: 15220 (sh)
+[2025-05-17 13:35:06Z INFO JobExtension] Inspecting process environment variables. PID: 8496 (sh)
+[2025-05-17 13:35:06Z INFO JobExtension] Inspecting process environment variables. PID: 8168 (Code)
+[2025-05-17 13:35:06Z INFO JobExtension] Inspecting process environment variables. PID: 11800 (chrome)
+[2025-05-17 13:35:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '14a9a683-894d-4420-9429-ab1ae8fb9f0e', success rate: 1/1.
+[2025-05-17 13:35:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6b7ada43-0fa0-4567-95a7-15a6778a90ee', success rate: 1/1.
+[2025-05-17 13:35:06Z INFO JobExtension] Inspecting process environment variables. PID: 1192 (chrome)
+[2025-05-17 13:35:06Z INFO JobExtension] Inspecting process environment variables. PID: 6932 (chrome)
+[2025-05-17 13:35:06Z INFO JobExtension] Inspecting process environment variables. PID: 2448 (chrome)
+[2025-05-17 13:35:06Z INFO JobExtension] Inspecting process environment variables. PID: 4892 (chrome)
+[2025-05-17 13:35:06Z INFO JobExtension] Inspecting process environment variables. PID: 8384 (svchost)
+[2025-05-17 13:35:06Z WARN JobExtension] Ignore exception during read process environment variables: Acesso negado.
+[2025-05-17 13:35:07Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-17 13:35:07Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\patri\site\mariliakarateka\actions-runner\_diag\blocks\bca3f4e5-29d1-472f-afad-6ad1bd1346c9_14a9a683-894d-4420-9429-ab1ae8fb9f0e.1
+[2025-05-17 13:35:07Z INFO JobExtension] Inspecting process environment variables. PID: 17424 (SearchProtocolHost)
+[2025-05-17 13:35:07Z WARN JobExtension] Ignore exception during read process environment variables: Acesso negado.
+[2025-05-17 13:35:07Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "6b7ada43-0fa0-4567-95a7-15a6778a90ee",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-05-17T13:35:06.5731655Z",
+  "finishTime": "2025-05-17T13:35:07.2893047Z"
+}.
+[2025-05-17 13:35:07Z INFO JobRunner] Job result after all job steps finish: Succeeded
+[2025-05-17 13:35:07Z INFO JobRunner] Completing the job execution context.
+[2025-05-17 13:35:07Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-05-17 13:35:07Z INFO JobRunner] Shutting down the job server queue.
+[2025-05-17 13:35:07Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-05-17 13:35:07Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-05-17 13:35:08Z INFO JobServerQueue] All queue process task stopped.
+[2025-05-17 13:35:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record '31f3849b-2605-52ca-a566-2272f684578f', success rate: 1/1.
+[2025-05-17 13:35:08Z INFO JobServerQueue] Web console line queue drained.
+[2025-05-17 13:35:08Z INFO JobServerQueue] Uploading 1 files in one shot.
+[2025-05-17 13:35:08Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-05-17 13:35:08Z INFO JobServerQueue] File upload queue drained.
+[2025-05-17 13:35:08Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-05-17 13:35:08Z INFO JobServerQueue] Uploading 2 file(s) in one shot through results service.
+[2025-05-17 13:35:08Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-17 13:35:08Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\patri\site\mariliakarateka\actions-runner\_diag\blocks\bca3f4e5-29d1-472f-afad-6ad1bd1346c9_6b7ada43-0fa0-4567-95a7-15a6778a90ee.1
+[2025-05-17 13:35:09Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-05-17 13:35:09Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\Users\patri\site\mariliakarateka\actions-runner\_diag\blocks\bca3f4e5-29d1-472f-afad-6ad1bd1346c9_31f3849b-2605-52ca-a566-2272f684578f.1
+[2025-05-17 13:35:10Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2025-05-17 13:35:10Z INFO JobServerQueue] Results upload queue drained.
+[2025-05-17 13:35:10Z INFO JobServerQueue] Timeline update queue drained.
+[2025-05-17 13:35:10Z INFO JobServerQueue] Disposing job server ...
+[2025-05-17 13:35:10Z INFO JobServerQueue] Disposing results server ...
+[2025-05-17 13:35:10Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-05-17 13:35:10Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\Users\patri\site\mariliakarateka\actions-runner\_work\_temp
+[2025-05-17 13:35:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 13:35:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 13:35:10Z INFO HostContext] Well known directory 'Diag': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag'
+[2025-05-17 13:35:10Z INFO HostContext] Well known config file 'Telemetry': 'C:\Users\patri\site\mariliakarateka\actions-runner\_diag\.telemetry'
+[2025-05-17 13:35:10Z INFO JobRunner] Raising job completed against run service
+[2025-05-17 13:35:11Z INFO Worker] Job completed.
