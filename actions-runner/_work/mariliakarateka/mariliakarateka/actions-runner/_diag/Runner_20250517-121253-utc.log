@@ -1,0 +1,275 @@
+[2025-05-17 12:12:53Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-05-17 12:12:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:12:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 12:12:53Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\patri\site\mariliakarateka\actions-runner\.credentials'
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 12:12:54Z INFO HostContext] Well known config file 'Runner': 'C:\Users\patri\site\mariliakarateka\actions-runner\.runner'
+[2025-05-17 12:12:54Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-05-17 12:12:54Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26100.
+[2025-05-17 12:12:54Z INFO Listener] Version: 2.317.0
+[2025-05-17 12:12:54Z INFO Listener] Commit: 6dc005ee3690a0303e0d7269b6f60295d22dcfad
+[2025-05-17 12:12:54Z INFO Listener] Culture: pt-BR
+[2025-05-17 12:12:54Z INFO Listener] UI Culture: pt-BR
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 12:12:54Z INFO Listener] Validating directory permissions for: 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 12:12:54Z INFO CommandLineParser] Parse
+[2025-05-17 12:12:54Z INFO CommandLineParser] Parsing 1 args
+[2025-05-17 12:12:54Z INFO CommandLineParser] parsing argument
+[2025-05-17 12:12:54Z INFO CommandLineParser] HasArgs: False
+[2025-05-17 12:12:54Z INFO CommandLineParser] Adding Command: run
+[2025-05-17 12:12:54Z INFO Listener] Arguments parsed
+[2025-05-17 12:12:54Z INFO Runner] ExecuteCommand
+[2025-05-17 12:12:54Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\patri\site\mariliakarateka\actions-runner\bin\Runner.Listener.dll
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:12:54Z INFO ConfigurationStore] binPath: C:\Users\patri\site\mariliakarateka\actions-runner\bin
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 12:12:54Z INFO ConfigurationStore] RootFolder: C:\Users\patri\site\mariliakarateka\actions-runner
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 12:12:54Z INFO HostContext] Well known config file 'Runner': 'C:\Users\patri\site\mariliakarateka\actions-runner\.runner'
+[2025-05-17 12:12:54Z INFO ConfigurationStore] ConfigFilePath: C:\Users\patri\site\mariliakarateka\actions-runner\.runner
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 12:12:54Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\patri\site\mariliakarateka\actions-runner\.credentials'
+[2025-05-17 12:12:54Z INFO ConfigurationStore] CredFilePath: C:\Users\patri\site\mariliakarateka\actions-runner\.credentials
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 12:12:54Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_migrated'
+[2025-05-17 12:12:54Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_migrated
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 12:12:54Z INFO HostContext] Well known config file 'Service': 'C:\Users\patri\site\mariliakarateka\actions-runner\.service'
+[2025-05-17 12:12:54Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\patri\site\mariliakarateka\actions-runner\.service
+[2025-05-17 12:12:54Z INFO CommandSettings] Flag 'help': 'False'
+[2025-05-17 12:12:54Z INFO CommandSettings] Flag 'version': 'False'
+[2025-05-17 12:12:54Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-05-17 12:12:54Z INFO CommandSettings] Flag 'check': 'False'
+[2025-05-17 12:12:54Z INFO CommandSettings] Command 'configure': 'False'
+[2025-05-17 12:12:54Z INFO CommandSettings] Command 'remove': 'False'
+[2025-05-17 12:12:54Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-05-17 12:12:54Z INFO ConfigurationManager] LoadSettings
+[2025-05-17 12:12:54Z INFO ConfigurationStore] IsConfigured()
+[2025-05-17 12:12:54Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-17 12:12:54Z INFO ConfigurationManager] Is configured: True
+[2025-05-17 12:12:54Z INFO ConfigurationStore] Read setting file: 307 chars
+[2025-05-17 12:12:54Z INFO ConfigurationManager] Settings Loaded
+[2025-05-17 12:12:54Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-05-17 12:12:54Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-05-17 12:12:54Z INFO CommandSettings] Command 'run': 'True'
+[2025-05-17 12:12:54Z INFO ConfigurationStore] IsConfigured()
+[2025-05-17 12:12:54Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-17 12:12:54Z INFO ConfigurationManager] Is configured: True
+[2025-05-17 12:12:54Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-05-17 12:12:54Z INFO Runner] Set runner startup type - Manual
+[2025-05-17 12:12:54Z INFO CommandSettings] Flag 'once': 'False'
+[2025-05-17 12:12:54Z INFO CommandSettings] Flag 'once': 'False'
+[2025-05-17 12:12:54Z INFO Runner] RunAsync
+[2025-05-17 12:12:54Z INFO ConfigurationManager] LoadSettings
+[2025-05-17 12:12:54Z INFO ConfigurationStore] IsConfigured()
+[2025-05-17 12:12:54Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-17 12:12:54Z INFO ConfigurationManager] Is configured: True
+[2025-05-17 12:12:54Z INFO ConfigurationManager] Settings Loaded
+[2025-05-17 12:12:54Z INFO MessageListener] {
+  "AgentId": 21,
+  "AgentName": "PATTY",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus14.actions.githubusercontent.com/1XtxQYvXudGo4lX5jS0O4BxYAlBMC5LF49yAGAHuXQV58ghiz1/",
+  "GitHubUrl": "https://github.com/PattySousa/mariliakarateka",
+  "WorkFolder": "_work"
+}
+[2025-05-17 12:12:54Z INFO MessageListener] Loading Credentials
+[2025-05-17 12:12:54Z INFO ConfigurationStore] HasCredentials()
+[2025-05-17 12:12:54Z INFO ConfigurationStore] stored True
+[2025-05-17 12:12:54Z INFO CredentialManager] GetCredentialProvider
+[2025-05-17 12:12:54Z INFO CredentialManager] Creating type OAuth
+[2025-05-17 12:12:54Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:12:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\patri\site\mariliakarateka\actions-runner'
+[2025-05-17 12:12:54Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams'
+[2025-05-17 12:12:54Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams
+[2025-05-17 12:12:54Z INFO MessageListener] Attempt to create session.
+[2025-05-17 12:12:54Z INFO MessageListener] Connecting to the Runner Server...
+[2025-05-17 12:12:54Z INFO RunnerServer] EstablishVssConnection
+[2025-05-17 12:12:54Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-05-17 12:12:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-17 12:12:54Z INFO RunnerServer] EstablishVssConnection
+[2025-05-17 12:12:54Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-05-17 12:12:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-17 12:12:54Z INFO RunnerServer] EstablishVssConnection
+[2025-05-17 12:12:54Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-05-17 12:12:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-17 12:12:55Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-17 12:12:55Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-17 12:12:55Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-17 12:12:56Z INFO MessageListener] VssConnection created
+[2025-05-17 12:12:56Z INFO Terminal] WRITE LINE: 
+[2025-05-17 12:12:56Z INFO Terminal] WRITE LINE: 
+[2025-05-17 12:12:56Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams
+[2025-05-17 12:12:56Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams
+[2025-05-17 12:12:57Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-17 12:12:57Z INFO MessageListener] Session created.
+[2025-05-17 12:12:57Z INFO Terminal] WRITE LINE: Current runner version: '2.317.0'
+[2025-05-17 12:12:57Z INFO Terminal] WRITE LINE: 2025-05-17 12:12:57Z: Listening for Jobs
+[2025-05-17 12:12:57Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2025-05-17 12:12:57Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:12:57Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams
+[2025-05-17 12:12:58Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-17 12:13:00Z INFO MessageListener] Message '2164320676054009454' received from session 'da27b546-45a6-4117-ad0f-7e10723af66f'.
+[2025-05-17 12:13:00Z INFO ConfigurationStore] HasCredentials()
+[2025-05-17 12:13:00Z INFO ConfigurationStore] stored True
+[2025-05-17 12:13:00Z INFO CredentialManager] GetCredentialProvider
+[2025-05-17 12:13:00Z INFO CredentialManager] Creating type OAuth
+[2025-05-17 12:13:00Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-17 12:13:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams
+[2025-05-17 12:13:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams
+[2025-05-17 12:13:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams
+[2025-05-17 12:13:00Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-17 12:13:02Z INFO JobDispatcher] Job request 0 for plan dd96f6f9-e86f-42a6-aa81-c8dfa568c66b job 279643c4-6b86-55e7-8baa-13cff60444c2 received.
+[2025-05-17 12:13:02Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-17 12:13:02Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-17 12:13:02Z INFO Terminal] WRITE LINE: 2025-05-17 12:13:02Z: Running job: deploy
+[2025-05-17 12:13:02Z INFO JobDispatcher] Start renew job request 0 for job 279643c4-6b86-55e7-8baa-13cff60444c2.
+[2025-05-17 12:13:02Z INFO JobDispatcher] Successfully renew job 279643c4-6b86-55e7-8baa-13cff60444c2, job is valid till 17/05/2025 12:23:59
+[2025-05-17 12:13:02Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:13:02Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 12:13:02Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\patri\site\mariliakarateka\actions-runner\bin\Runner.Worker.exe'
+[2025-05-17 12:13:02Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2364 2376'
+[2025-05-17 12:13:02Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:13:02Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 12:13:02Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-17 12:13:02Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-17 12:13:02Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 12:13:02Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-17 12:13:02Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 12:13:02Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-17 12:13:02Z INFO ProcessInvokerWrapper] Process started with process id 10764, waiting for process exit.
+[2025-05-17 12:13:02Z INFO JobDispatcher] Send job request message to worker for job 279643c4-6b86-55e7-8baa-13cff60444c2.
+[2025-05-17 12:13:02Z INFO ProcessChannel] Sending message of length 19908, with hash 'ca256828b7e7042f026f18c560e42460f7a7cf00d89eb9f38774c22d27f6e2cc'
+[2025-05-17 12:13:03Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-17 12:13:03Z INFO JobNotification] Entering StartMonitor
+[2025-05-17 12:13:03Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:13:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 12:13:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 12:13:31Z INFO ProcessInvokerWrapper] Finished process 10764 with exit code 102, and elapsed time 00:00:28.6133444.
+[2025-05-17 12:13:31Z INFO JobDispatcher] Worker finished for job 279643c4-6b86-55e7-8baa-13cff60444c2. Code: 102
+[2025-05-17 12:13:31Z INFO JobDispatcher] finish job request for job 279643c4-6b86-55e7-8baa-13cff60444c2 with result: Failed
+[2025-05-17 12:13:31Z INFO Terminal] WRITE LINE: 2025-05-17 12:13:31Z: Job deploy completed with result: Failed
+[2025-05-17 12:13:31Z INFO JobDispatcher] Stop renew job request for job 279643c4-6b86-55e7-8baa-13cff60444c2.
+[2025-05-17 12:13:31Z INFO JobDispatcher] job renew has been cancelled, stop renew job 279643c4-6b86-55e7-8baa-13cff60444c2.
+[2025-05-17 12:13:31Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-17 12:13:31Z INFO JobNotification] Entering EndMonitor
+[2025-05-17 12:13:31Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-17 12:13:32Z INFO MessageListener] Message '1293257061454400834' received from session 'da27b546-45a6-4117-ad0f-7e10723af66f'.
+[2025-05-17 12:13:32Z INFO ConfigurationStore] HasCredentials()
+[2025-05-17 12:13:32Z INFO ConfigurationStore] stored True
+[2025-05-17 12:13:32Z INFO CredentialManager] GetCredentialProvider
+[2025-05-17 12:13:32Z INFO CredentialManager] Creating type OAuth
+[2025-05-17 12:13:32Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-17 12:13:32Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams
+[2025-05-17 12:13:32Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams
+[2025-05-17 12:13:32Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams
+[2025-05-17 12:13:32Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-17 12:13:34Z INFO JobDispatcher] Job request 0 for plan 8fa4aba6-e257-455f-877a-52b8da85e242 job c8cfa2e2-71df-5e5f-919a-2750d9c126c0 received.
+[2025-05-17 12:13:34Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-17 12:13:34Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-17 12:13:34Z INFO JobDispatcher] Job request 279643c4-6b86-55e7-8baa-13cff60444c2 processed succeed.
+[2025-05-17 12:13:34Z INFO Terminal] WRITE LINE: 2025-05-17 12:13:34Z: Running job: deploy
+[2025-05-17 12:13:34Z INFO JobDispatcher] Start renew job request 0 for job c8cfa2e2-71df-5e5f-919a-2750d9c126c0.
+[2025-05-17 12:13:34Z INFO JobDispatcher] Successfully renew job c8cfa2e2-71df-5e5f-919a-2750d9c126c0, job is valid till 17/05/2025 12:24:31
+[2025-05-17 12:13:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:13:34Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 12:13:34Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\patri\site\mariliakarateka\actions-runner\bin\Runner.Worker.exe'
+[2025-05-17 12:13:34Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2416 1876'
+[2025-05-17 12:13:34Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:13:34Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 12:13:34Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-17 12:13:34Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-17 12:13:34Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 12:13:34Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-17 12:13:34Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 12:13:34Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-17 12:13:34Z INFO ProcessInvokerWrapper] Process started with process id 17960, waiting for process exit.
+[2025-05-17 12:13:34Z INFO JobDispatcher] Send job request message to worker for job c8cfa2e2-71df-5e5f-919a-2750d9c126c0.
+[2025-05-17 12:13:34Z INFO ProcessChannel] Sending message of length 20001, with hash '7c12831716f4075b864c45047c99da09bda7e6186300e6e5aa6126d6757488fa'
+[2025-05-17 12:13:35Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-17 12:13:35Z INFO JobNotification] Entering StartMonitor
+[2025-05-17 12:13:35Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:14:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 12:14:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 12:14:21Z INFO ProcessInvokerWrapper] Finished process 17960 with exit code 100, and elapsed time 00:00:46.8076516.
+[2025-05-17 12:14:21Z INFO JobDispatcher] Worker finished for job c8cfa2e2-71df-5e5f-919a-2750d9c126c0. Code: 100
+[2025-05-17 12:14:21Z INFO JobDispatcher] finish job request for job c8cfa2e2-71df-5e5f-919a-2750d9c126c0 with result: Succeeded
+[2025-05-17 12:14:21Z INFO Terminal] WRITE LINE: 2025-05-17 12:14:21Z: Job deploy completed with result: Succeeded
+[2025-05-17 12:14:21Z INFO JobDispatcher] Stop renew job request for job c8cfa2e2-71df-5e5f-919a-2750d9c126c0.
+[2025-05-17 12:14:21Z INFO JobDispatcher] job renew has been cancelled, stop renew job c8cfa2e2-71df-5e5f-919a-2750d9c126c0.
+[2025-05-17 12:14:21Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-17 12:14:21Z INFO JobNotification] Entering EndMonitor
+[2025-05-17 12:14:21Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-17 12:14:26Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:15:16Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:16:07Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:16:57Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:17:48Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:18:38Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:19:29Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:20:19Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:21:10Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:22:00Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:22:51Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:23:41Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:24:32Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:24:48Z INFO MessageListener] Message '3376231115051067066' received from session 'da27b546-45a6-4117-ad0f-7e10723af66f'.
+[2025-05-17 12:24:48Z INFO ConfigurationStore] HasCredentials()
+[2025-05-17 12:24:48Z INFO ConfigurationStore] stored True
+[2025-05-17 12:24:48Z INFO CredentialManager] GetCredentialProvider
+[2025-05-17 12:24:48Z INFO CredentialManager] Creating type OAuth
+[2025-05-17 12:24:48Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-17 12:24:48Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams
+[2025-05-17 12:24:48Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams
+[2025-05-17 12:24:49Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\patri\site\mariliakarateka\actions-runner\.credentials_rsaparams
+[2025-05-17 12:24:49Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-17 12:24:50Z INFO JobDispatcher] Job request 0 for plan f7ab6348-9b03-491b-904a-a783cf826929 job 4628d292-74c3-5e4b-a94c-16f35a1070e2 received.
+[2025-05-17 12:24:50Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-17 12:24:50Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-17 12:24:50Z INFO JobDispatcher] Job request c8cfa2e2-71df-5e5f-919a-2750d9c126c0 processed succeed.
+[2025-05-17 12:24:50Z INFO Terminal] WRITE LINE: 2025-05-17 12:24:50Z: Running job: deploy
+[2025-05-17 12:24:50Z INFO JobDispatcher] Start renew job request 0 for job 4628d292-74c3-5e4b-a94c-16f35a1070e2.
+[2025-05-17 12:24:51Z INFO JobDispatcher] Successfully renew job 4628d292-74c3-5e4b-a94c-16f35a1070e2, job is valid till 17/05/2025 12:35:48
+[2025-05-17 12:24:51Z INFO HostContext] Well known directory 'Bin': 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:24:51Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-17 12:24:51Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\patri\site\mariliakarateka\actions-runner\bin\Runner.Worker.exe'
+[2025-05-17 12:24:51Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2484 2496'
+[2025-05-17 12:24:51Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\patri\site\mariliakarateka\actions-runner\bin'
+[2025-05-17 12:24:51Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-17 12:24:51Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-17 12:24:51Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-17 12:24:51Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-17 12:24:51Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-17 12:24:51Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-17 12:24:51Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-17 12:24:51Z INFO ProcessInvokerWrapper] Process started with process id 8240, waiting for process exit.
+[2025-05-17 12:24:51Z INFO JobDispatcher] Send job request message to worker for job 4628d292-74c3-5e4b-a94c-16f35a1070e2.
+[2025-05-17 12:24:51Z INFO ProcessChannel] Sending message of length 19866, with hash '4fbdbc35a955e9ad9b8b8dd8a74641eb19da8c7f6e4759194033f033b9d218a1'
+[2025-05-17 12:24:52Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-17 12:24:52Z INFO JobNotification] Entering StartMonitor
+[2025-05-17 12:24:52Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:25:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 12:25:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-17 12:25:21Z INFO ProcessInvokerWrapper] Finished process 8240 with exit code 100, and elapsed time 00:00:29.9672355.
+[2025-05-17 12:25:21Z INFO JobDispatcher] Worker finished for job 4628d292-74c3-5e4b-a94c-16f35a1070e2. Code: 100
+[2025-05-17 12:25:21Z INFO JobDispatcher] finish job request for job 4628d292-74c3-5e4b-a94c-16f35a1070e2 with result: Succeeded
+[2025-05-17 12:25:21Z INFO Terminal] WRITE LINE: 2025-05-17 12:25:21Z: Job deploy completed with result: Succeeded
+[2025-05-17 12:25:21Z INFO JobDispatcher] Stop renew job request for job 4628d292-74c3-5e4b-a94c-16f35a1070e2.
+[2025-05-17 12:25:21Z INFO JobDispatcher] job renew has been cancelled, stop renew job 4628d292-74c3-5e4b-a94c-16f35a1070e2.
+[2025-05-17 12:25:21Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-17 12:25:21Z INFO JobNotification] Entering EndMonitor
+[2025-05-17 12:25:21Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-17 12:25:42Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:26:33Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:27:23Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:28:14Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2025-05-17 12:29:05Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
