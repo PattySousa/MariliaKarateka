@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "PattySousa/mariliakarateka",
+  "pipelineDirectory": "mariliakarateka",
+  "workspaceDirectory": "mariliakarateka\\mariliakarateka",
+  "repositories": {
+    "PattySousa/mariliakarateka": {
+      "repositoryPath": "mariliakarateka\\mariliakarateka",
+      "lastRunOn": "05/16/2025 22:56:09 -03:00"
+    }
+  },
+  "lastRunOn": "05/17/2025 09:24:52 -03:00"
+}
