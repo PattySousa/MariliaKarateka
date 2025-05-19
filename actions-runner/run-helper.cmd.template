@@ -1,4 +1,4 @@
-@echo off
+@echo on
 SET UPDATEFILE=update.finished
 "%~dp0\bin\Runner.Listener.exe" run %*
 
