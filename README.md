@@ -430,13 +430,7 @@ Explicação do Workflow CI/CD (acima)
  ![image](https://github.com/user-attachments/assets/92674dce-7ec4-4f0c-bae8-30dfde7dcd9c)
 
 
-
-🔗 Deploy em produção:
-
-    https://www.mariliakarateka.com.br/
-
-    
-    
+   
 
 📸 Captura de tela do site:
 
@@ -452,6 +446,13 @@ Explicação do Workflow CI/CD (acima)
     JavaScript simples para interatividade
     Totalmente containerizado com Docker
     Disponível para deploy em qualquer cluster Kubernetes
+
+
+
+🔗 Deploy em produção:
+
+    https://www.mariliakarateka.com.br/
+
 
 
 👩‍💻 Sobre a Desenvolvedora
