@@ -117,7 +117,7 @@ Baixei a versão para Windows e executei a instalação normalmente.
 
        docker login
 
-   8.3 Usei o token gerado em: https://login.docker.com/active
+   8.3 Usei o token gerado em
 =>Este comando gerou uma chave de acesso único. Acessei o site abaixo, conforme instrução, para colar a chave de acesso e identificar o docker: 
 
       https://login.docker.com/active
@@ -135,7 +135,8 @@ Baixei a versão para Windows e executei a instalação normalmente.
 A imagem foi publicada com sucesso e está disponível no repositório:
  
     https://hub.docker.com/repository/docker/patriciasousa/mariliakarateka
-_______________________________________________________________________________________
+
+
 
 ☸️ Kubernetes e Helm Charts - Deploy 
 
