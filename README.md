@@ -383,6 +383,11 @@ Explicação do Workflow CI/CD (acima)
       git commit -m "Adiciona pipeline CI/CD com build e deploy"
       git push origin main     
 
+
+![image](https://github.com/user-attachments/assets/1a67d7f4-4d52-445b-9420-f2e1bd02671f)
+
+
+
 26-Os dados acima foram os dados finais do projeto, tive muitos erros e inconsistências na parte do CI/CD, tive que mudar muitos elementos para chegar a versão acima final, que é configurada de acordo com a necessidade de cada projeto, não sendo uma estrutura fixa. Compartilhei os manifestos e informações para nortear para quem for tentar elaborar um projeto similar ao meu, mas depende de muita leitura na documentação, pesquisas e personalização de específica para cada projeto.
 
 
@@ -392,6 +397,8 @@ Explicação do Workflow CI/CD (acima)
    Experiência real com cloud-native apps, infraestrutura como código e segurança TLS.
    Acesso público com domínio customizado e seguro.
    Otimizações com WSL2 para execução em máquinas locais.
+
+   
 
 
 ⏩  Links Importantes
