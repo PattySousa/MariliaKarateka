@@ -4,6 +4,22 @@ Site Marilia Karateka
 ✨ Sobre o projeto
 
 => Desenvolvi este site em homenagem à minha mãe, Marília, que é uma atleta 60+ apaixonada por karatê. O projeto nasceu com um carinho especial, mas rapidamente transformei-o em um estudo completo de tecnologias modernas e práticas DevOps, desde a concepção local até o deploy usando Docker, Kubernetes, Helm e integração com serviços de DNS e gerenciamento de imagens.
+
+
+⚙️ Tecnologias Utilizadas
+
+| Ferramenta      | Finalidade                         |
+| --------------- | ---------------------------------- |
+| HTML, CSS, JS   | Estrutura e estilo do site         |
+| Docker          | Containerização                    |
+| Docker Hub      | Armazenamento da imagem            |
+| Kubernetes      | Orquestração dos containers        |
+| Helm Charts     | Automatizar o deploy no Kubernetes |
+| GitHub Actions  | CI/CD automatizado                 |
+| Actions Runner  | Executor local das pipelines       |
+| Cloudflare      | DNS, túnel e HTTPS                 |
+| Rancher Desktop | Gerenciamento visual do cluster    |
+
    
 =>A estrutura do projeto ficou com esta arquitetura, no VSCode 
 
@@ -50,6 +66,7 @@ git add .         # Adicionei todos os arquivos modificados
 git commit -m "alterações dos arquivos"
 git push origin main  # Envio para o repositório remoto no GitHub
 
+
 🐳 Etapas com Docker
 
    1-Instalei o Docker Desktop via site oficial. 
@@ -78,7 +95,7 @@ Baixei a versão para Windows e executei a instalação normalmente.
 
       http://localhost:8080
 
-   6-Problemas de Performance e Ajuste de Memória
+   6-Otimização via WSL
 =>Minha máquina começou a ficar extremamente lenta, após muitas pesquisas descobri que o Dockerfile era o problema, estava consumindo muita memóra local dela e estava quase parando, literalmente. Para ajustar, tive que ir no diretório C: da minha máquina, acessar meu usuário e criar um arquivo com o nome .wslconfig, sem nenhuma extensão e restringir para apenas 1GB e 1 processador meu projeto no Dockerfile. Dentro deste arquivo, colei o seguinte script de configuração: 
 
       [wsl2]
@@ -114,7 +131,7 @@ Baixei a versão para Windows e executei a instalação normalmente.
     
       docker push meuusuário/meusite:latest 
       
-   11-Resultado no Docker Hub
+   11-Resultado do Repositório do Docker Hub
 A imagem foi publicada com sucesso e está disponível no repositório:
  
     https://hub.docker.com/repository/docker/patriciasousa/mariliakarateka
@@ -150,6 +167,7 @@ Resumo das etapas de DNS e túnel:
       rm charts/values.yaml charts/templates/*.yaml
 
    17-Criei o Arquivo values.yaml:
+   📁 values.yaml
 
       replicaCount: 1
       image:
@@ -177,6 +195,7 @@ O replicaCount acima é a quantidade de réplicas(pods) que o Kubernetes irá cr
 
    19-Arquivo charts/templates/deployment.yaml
 Criei o arquivo chamado deployment.yaml, com a seguinte estrutura: 
+📁 deployment.yaml
 
       apiVersion: apps/v1
       kind: Deployment
@@ -209,6 +228,7 @@ Principais campos do template Helm acima =>deployment.yaml
 
 
 20-Criei charts/templates/service.yaml com:
+📁 service.yaml
 
       apiVersion: v1
       kind: Service
@@ -274,18 +294,36 @@ No Dockerfile, as informações importantes são:
    =>Após seguir estes passos, você terá adicionado com sucesso os secrets DOCKERHUB_USERNAME, DOCKERHUB_TOKEN e KUBECONFIG_BASE64 ao seu repositório do GitHub. Estes secrets estarão disponíveis para serem usados de forma segura no workflows de GitHub Actions para realizar a autenticação com o Docker Hub e o seu cluster Kubernetes durante os processos de CI/CD.
 
 
-🔧 ETAPA do CI/CD com Github Actions
+   🌍 Domínio Personalizado com Cloudflare
+   
+  *  DNS configurado via Cloudflare apontando para o IP público do cluster Kubernetes.
+  *  SSL/TLS ativado para garantir segurança HTTPS.
+  *  Nome de domínio personalizado, acrescentando as variações de pesquisa http/https/www ou com o nome direto, sendo o endereço principal o relacionado abaixo:
+    
+  🔗 https://www.mariliakarateka.com.br
+
+
+
+🚀 CI/CD com GitHub Actions + Runner
+   Automação do build da imagem Docker e deploy com Helm configurada no arquivo:
 
 23-Criei a pasta e o arquivo do workflow
 Abri o terminal integrado do VSCode na raiz do seu projeto e execute, no Bash:
 
       mkdir -p .github/workflows
 
-   Depois, criei o arquivo do workflow (pode ser pelo terminal do Bash, no VSCode).  
-   Navegue até .github/workflows/
-   Clique com o botão direito > Novo Arquivo > ci-cd.yml
 
-      code .github/workflows/ci-cd.yml
+Depois, criei o arquivo do workflow (pode ser pelo terminal do Bash, no VSCode).  
+Naveguei até .github/workflows/
+Cliquei com o botão direito > Novo Arquivo > ci-cd.yml
+📁 .github/workflows/ci-cd.yaml
+
+       .github/workflows/ci-cd.yml
+
+🔁 Funcionalidades:
+    Build da imagem com cada push
+    Push para o Docker Hub
+    Deploy automático via Helm (em clusters configurados)
 
  
 24-Adicionando a Pipeline CI/CD ao projeto (se você for fazer, não esqueça de substituir a descrição NomeDoSeuUsuáriodoGitHub/NomeDoSeuProjeto, por suas respectivas informações, exemplo: DesenvolvedorExpert/ProjetoSite: 
@@ -347,7 +385,84 @@ Explicação do Workflow CI/CD (acima)
 26-Os dados acima foram os dados finais do projeto, tive muitos erros e inconsistências na parte do CI/CD, tive que mudar muitos elementos para chegar a versão acima final, que é configurada de acordo com a necessidade de cada projeto, não sendo uma estrutura fixa. Compartilhei os manifestos e informações para nortear para quem for tentar elaborar um projeto similar ao meu, mas depende de muita leitura na documentação, pesquisas e personalização de específica para cada projeto.
 
 
+🎯 Aprendizados & Resultados
+   
+   Estruturação de um pipeline DevOps completo, do código à produção.
+   Experiência real com cloud-native apps, infraestrutura como código e segurança TLS.
+   Acesso público com domínio customizado e seguro.
+   Otimizações com WSL2 para execução em máquinas locais.
+
+
+⏩  Links Importantes
+
+ 🔗 Projeto GitHub          
+ 
+    https://github.com/PattySousa/mariliakarateka   
+
+   ![Captura de Tela (1603)](https://github.com/user-attachments/assets/dcec2539-75d0-4109-b97e-233d103f20f9)
+
+
+    
+ 🐳 Docker Hub       
+
+    https://hub.docker.com/repository/docker/patriciasousa/mariliakarateka/
+ 
+ 🧪 Localhost       
+ 
+    http://localhost:8080   
+
+   ![Captura de Tela (1604)](https://github.com/user-attachments/assets/225995fa-fefa-41ba-bb8e-b05b1272f284)
+
+
+    
+ 🐮 Rancher Desktop  
+    Cluster configurado com Helm + Docker + Kubernetes 
+ 
+
+ ![image](https://github.com/user-attachments/assets/92674dce-7ec4-4f0c-bae8-30dfde7dcd9c)
 
 
 
+🔗 Deploy em produção:
+
+    https://www.mariliakarateka.com.br/
+
+    
+    
+
+📸 Captura de tela do site:
+
+![Captura de Tela (1605)](https://github.com/user-attachments/assets/c716c2c9-ca45-4059-8d1d-b5e873d2186d)
+
+
+
+📝 Funcionalidades do Site
+    Página inicial
+    Galeria de imagens
+    Design responsivo
+    Código HTML/CSS limpo e organizado
+    JavaScript simples para interatividade
+    Totalmente containerizado com Docker
+    Disponível para deploy em qualquer cluster Kubernetes
+
+
+👩‍💻 Sobre a Desenvolvedora
+
+Sou Patrícia Sousa, estudante de Engenharia de Software, com foco em tecnologias cloud-native, automação e infraestrutura como código. Tenho estudado e praticado intensamente com ferramentas de DevOps como Docker, Helm, Kubernetes, CI/CD e GitHub Actions
+
+
+📜 Certificações
+   ✅ AWS Certified Cloud Practitioner
+   ✅ AWS Certified Solutions Architect – Associate
+   📚 Estudando: AWS Certified Developer – Associate
+
+ 
+ 💼 LinkedIn:       
+
+    https://www.linkedin.com/in/patricia--sousa/
+ 
+     
+ 
+
+⭐ Se você é recrutador(a), este projeto demonstra minha capacidade de desenvolver, implantar, configurar e publicar uma aplicação estática completa com práticas modernas DevOps.
 
