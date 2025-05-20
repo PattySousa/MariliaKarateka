@@ -454,6 +454,40 @@ Explicação do Workflow CI/CD (acima)
     https://www.mariliakarateka.com.br/
 
 
+🔧 NOVAS ETAPAS
+   ✅Baixar o pacote do runner novamente
+
+   O CI/CD estava cessando parando de funcionar ao desligar a máquina. O que não atende ao meu proósito final para o projeto. Como não tenho mais o Free Tier em Cloud e não pretendo ter custos com o projeto, resolvi estudar um pouco mais para implementar uma solução que funcionasse por mais tempo, não apenas desligando a máquina.
+
+   Precisei deletar a pasta Actions > Runners do projeto para reconfigurá-la de acordo com as novas necessidades.
+   Deletei pelo VSCode, mas aceitaria também indo no repositório do Github, dentro da pasta do projeto, escolher Settings (na direita), Actions e Runners
+
+   Dei download novamente do actions/runner, colando este comando abaixo, configurando para Windows x64, porém se o sistema operacional for outro, visite o site e baixe direto de lá: https://github.com/actions/runner/releases/tag/v2.324.0
+
+   Comando de instalação do Actions-Runner para o Windows x64 é:
+
+         # Create a folder under the drive root
+         mkdir \actions-runner ; cd \actions-runner
+         # Download the latest runner package
+         Invoke-WebRequest -Uri https://github.com/actions/runner/releases/download/v2.324.0/actions-runner-win-x64-2.324.0.zip -OutFile actions-runner-win-x64-2.324.0.zip
+         # Extract the installer
+         Add-Type -AssemblyName System.IO.Compression.FileSystem ;
+         [System.IO.Compression.ZipFile]::ExtractToDirectory("$PWD\actions-runner-win-x64-2.324.0.zip", "$PWD")
+
+Criei uma nova pasta no projeto:
+
+         cd C:\Users\patri\site\mariliakarateka
+         mkdir actions-runner
+
+Extraí o arquivo zipado do actions-runner e mandei salvar o conteúdo já dentro da actions-runner do meu projeto, no VSCode
+
+
+
+
+
+
+
+
 
 👩‍💻 Sobre a Desenvolvedora
 
